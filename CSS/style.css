@@ -1,6 +1,49 @@
-hr{
+/*---------Heading------------*/
+.big-heading{
+    height: 70%;
+    width: 100%;
+    font-size: 3rem;
+    line-height: 1.5;
+    position: absolute;
+}
+.big-img{
+    width: 100%;
+    height: 70%;
+}
+.des-heading{
+    position: absolute;
+    bottom: 55%;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+/*----------Navigation bar-------*/
+.navbar{
+    /*position:absolute;*/
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    z-index: 2;
+    position:fixed;
+}
+/*-----------Portfolio-------------*/
+#portfolio{
+    top:50%;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+#portfolio div{
+   
+}
+.first-webSite{
+    width: 50%;
+    height: 50%;
+}
+
+
+/*hr{
     border-style: dotted none none;
-    /*border-top-style:dotted;    border-style: none;*/
+    /*border-top-style:dotted;    border-style: none;
     border-width: 5px;
     border-color: grey;
     width: 5%;
@@ -31,4 +74,4 @@ body{
     height: 200px;
     border:solid 10px;
     margin-left: 500px;
-}
+}*/
