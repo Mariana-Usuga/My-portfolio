@@ -1,2 +1,2 @@
 # My-portfolio
-a little about me
+This is my portfolio where you can watch my projects and skills 
