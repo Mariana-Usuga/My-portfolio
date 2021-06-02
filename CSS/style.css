@@ -1,6 +1,12 @@
 body{
     font-family: 'Vollkorn', serif;
 }
+h2{
+    padding: 5% 0;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 4px 0 #f4a9a8;
+}
 /*---------Heading------------*/
 #header{
     background-color: #ba135d;
@@ -47,18 +53,11 @@ body{
     font-size: 2.5rem;
     text-shadow: 4px 0 #9e858c;
 }
-#portfolio h2{
-    text-shadow: 4px 0 #f4a9a8;
-}
 /*-------------Skill---------------*/
 #skillset{
     padding: 5% 10%;
     text-align: center;
     background-color:#ce97b0;
-}
-h2{
-    padding: 5% 0;
-    font-size: 3rem;
 }
 #skillset img{
     width: 60%;
@@ -78,5 +77,39 @@ h2{
 }
 .js{
     border:8px solid #ffcc29;
+}
+/*----------------Contact---------------*/
+#contact{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    text-align: center;
+    font-size: 30px;
+}
+.contact-group{
+    margin-bottom: 15px;
+    text-shadow: 2px 0 #f4a9a8;
+}
+.form-input{
+    padding: 5px;
+}
+.contact-group label{
+    margin-right: 15px;
+}
+.button-ct button{
+    background-color: #f4a9a8;
+}
+/*------------Footer------------->*/
+footer{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+footer a{
+    padding: 10px;
+    background-color: #f4a9a8;
+    color: white;
+    border-radius: 100%;
+    margin: 5px;
 }
 
