@@ -30,6 +30,9 @@ h2{
     border-radius: 6px;
 }
 /*----------Navigation bar-------*/
+nav{
+    background-color: #ba135d;
+}
 .navbar{
     padding: 0 4% 1%;
 }
