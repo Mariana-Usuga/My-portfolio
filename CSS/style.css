@@ -91,18 +91,26 @@ nav{
 .form-group{
     margin-top: 1rem;
 }
-/*------------Footer------------->*/
-footer{
+/*------------Social media------------->*/
+#social-media{
     font-size: 30px;
     text-align: center;
     padding: 30px;
     margin-bottom: 100px;
 }
-footer a{
-    padding: 10px;
+#social-media a{
     background-color: #f4a9a8;
     color: white;
-    border-radius: 100%;
     margin: 5px;
+    padding: 0.6% 1% 0 1%;
+    border-radius: 10rem;
+}
+/*----------Footer-------------*/
+footer{
+    text-align: center;
+    background-color: #ba135d;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2rem;
 }
 
