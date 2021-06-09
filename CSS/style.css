@@ -83,23 +83,13 @@ nav{
 }
 /*----------------Contact---------------*/
 #contact{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    text-align: center;
-    font-size: 30px;
+    margin-bottom: 5%;
 }
-.contact-group{
-    margin-bottom: 15px;
-    text-shadow: 2px 0 #f4a9a8;
+.form-control{
+    font-size: 1.5rem;
 }
-.form-input{
-    padding: 5px;
-}
-.contact-group label{
-    margin-right: 15px;
-}
-.button-ct button{
-    background-color: #f4a9a8;
+.form-group{
+    margin-top: 1rem;
 }
 /*------------Footer------------->*/
 footer{
