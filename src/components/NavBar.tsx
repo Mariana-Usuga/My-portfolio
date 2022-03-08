@@ -1,23 +1,39 @@
-const NavBar = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div>Mariana Usuga</div>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ms-auto">
-        <li className="nav-item">
-          <a className="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#skillset">Skillset</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-);
+import React, { useState, FC } from 'react';
+import { Squash as Hamburger } from 'hamburger-react';
+
+import './navBar.scss';
+
+const NavBar: FC = () => {
+  const [isOpen, setOpen] = useState(false);
+
+  return (
+    <nav className="navbar">
+      <div className="navbar__container">
+        <div>Mariana Usuga</div>
+        <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} />
+      </div>
+      <div className="navbar__collapse">
+        <ul className="navbar-nav">
+          <li className="navbar-item">
+            <a className="navbar-link" href="#portfolio">About</a>
+          </li>
+          <li className="navbar-item">
+            <a className="navbar-link" href="#skillset">Experince</a>
+          </li>
+          <li className="navbar-item">
+            <a className="navbar-link" href="#contact">Work</a>
+          </li>
+          <li className="navbar-item">
+            <a className="navbar-link" href="#contact">Contact</a>
+          </li>
+          <li className="navbar-item">
+            <a className="navbar-link" href="#contact">Resume</a>
+          </li>
+        </ul>
+        {/* </div> */}
+      </div>
+    </nav>
+  );
+};
 
 export default NavBar;
