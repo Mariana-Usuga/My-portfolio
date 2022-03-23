@@ -1,6 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import React from 'react';
+import './styles/style.scss';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
