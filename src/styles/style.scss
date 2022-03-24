@@ -2,5 +2,22 @@
 
 //quick test
 $primary: rgb(18, 14, 38);
+$secondary: rgb(6, 147, 227);
+// $light: -internal-light-dark(black, white);
+$font-family: 'Space Mono', 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+  monospace;
 
+.text-font-family {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// .navbar-collapse {
+//   // display: flex !important; // stylelint-disable-line declaration-no-important
+//   flex-basis: 70%;
+//   flex-grow: 1;
+//   align-items: center;
+// }
+$flex-grow: 2;
+$flex-basis: 70%;
+// $text-font-family: 'Montserrat', sans-serif;
 @import '../../bootstrap/scss/bootstrap.scss';
