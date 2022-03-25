@@ -4,11 +4,11 @@ import React from 'react';
 import './styles/style.scss';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import NavBar from './components/NavBar';
+import Portfolio from './pages/Portfolio';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar />
+    <Portfolio />
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -3,12 +3,19 @@
 //quick test
 $primary: rgb(18, 14, 38);
 $secondary: rgb(6, 147, 227);
-// $light: -internal-light-dark(black, white);
-$font-family: 'Space Mono', 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
-  monospace;
 
-.text-font-family {
+$font-sizes: (
+  1: 75px,
+  6: 18px,
+);
+
+.text-font-family-navbar {
   font-family: 'Montserrat', sans-serif;
+}
+
+.text-font-family-main {
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
 }
 
 // .navbar-collapse {
