@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC /* useState */ } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaAlignRight, FaTimes } from 'react-icons/fa';
 
 // import './navBar.scss';
 
@@ -12,7 +12,7 @@ const NavBar: FC = () => {
   //  navbar-light
   // navbar navbar-expand-lg bg-primary
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg pt-4 ps-3">
       <div className="container-fluid">
         <a className="navbar-brand text-light" href="#">Mariana</a>
         <button
@@ -22,7 +22,7 @@ const NavBar: FC = () => {
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
         >
-          <FaBars style={{ fontSize: '30px' }} />
+          <FaAlignRight style={{ fontSize: '35px' }} />
         </button>
         <div className="offcanvas offcanvas-end bg-primary text-light" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div className="offcanvas-header">
@@ -61,7 +61,7 @@ const NavBar: FC = () => {
               </li>
               <li className="nav-item p-4">
                 <button
-                  className="btn btn-outline-secondary fw-bold mt-3"
+                  className="btn btn-outline-secondary fw-bold"
                   type="button"
                 >
                   Resume

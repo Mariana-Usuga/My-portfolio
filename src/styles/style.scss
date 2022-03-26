@@ -3,10 +3,11 @@
 //quick test
 $primary: rgb(18, 14, 38);
 $secondary: rgb(6, 147, 227);
+$success: rgb(163, 168, 195);
 
 $font-sizes: (
   1: 75px,
-  6: 18px,
+  6: 20px,
 );
 
 .text-font-family-navbar {
@@ -18,13 +19,20 @@ $font-sizes: (
     system-ui, sans-serif;
 }
 
+.center-aboutMe {
+  margin: 0 auto;
+}
+
+.margin-top-aboutMe {
+  margin-top: 200px;
+}
+
 // .navbar-collapse {
 //   // display: flex !important; // stylelint-disable-line declaration-no-important
 //   flex-basis: 70%;
 //   flex-grow: 1;
 //   align-items: center;
 // }
-$flex-grow: 2;
-$flex-basis: 70%;
+
 // $text-font-family: 'Montserrat', sans-serif;
 @import '../../bootstrap/scss/bootstrap.scss';
