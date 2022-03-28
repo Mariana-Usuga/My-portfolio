@@ -3,8 +3,8 @@
 /* eslint-disable import/no-unresolved */
 import NavBar from '../components/NavBar';
 import Main from '../components/Main';
-import SocialMedia from '../components/SocialMedia';
-import Email from '../components/Email';
+// import SocialMedia from '../components/SocialMedia';
+// import Email from '../components/Email';
 import AboutMe from '../components/AboutMe';
 
 const Portfolio = () => {
@@ -13,9 +13,9 @@ const Portfolio = () => {
     <>
       <NavBar />
       <div className="d-flex">
-        <SocialMedia />
+        {/* <SocialMedia /> */}
         <Main />
-        <Email />
+        {/* <Email /> */}
       </div>
       <AboutMe />
 
