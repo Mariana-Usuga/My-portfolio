@@ -6,18 +6,20 @@ import Main from '../components/Main';
 // import SocialMedia from '../components/SocialMedia';
 // import Email from '../components/Email';
 import AboutMe from '../components/AboutMe';
+import WhereIveWorked from '../components/WhereIveWorked';
 
 const Portfolio = () => {
   console.log('working');
   return (
     <>
       <NavBar />
-      <div className="d-flex">
-        {/* <SocialMedia /> */}
-        <Main />
-        {/* <Email /> */}
-      </div>
+      {/* <div className="d-flex"> */}
+      {/* <SocialMedia /> */}
+      <Main />
+      {/* <Email /> */}
+      {/* </div> */}
       <AboutMe />
+      <WhereIveWorked />
 
     </>
   );

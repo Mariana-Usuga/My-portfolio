@@ -30,6 +30,33 @@ $font-sizes: (
   margin-top: 200px;
 }
 
+.hide {
+  transform: translate(-100%, 0);
+}
+.show {
+  z-index: 10;
+  transition: transform 0.3s ease;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+@media (min-width: 992px) {
+  .hideBars {
+    opacity: 0;
+  }
+  .wrapper {
+    max-height: 120px;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .item {
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+  }
+}
 // .navbar-collapse {
 //   // display: flex !important; // stylelint-disable-line declaration-no-important
 //   flex-basis: 70%;

@@ -9,6 +9,7 @@ const AboutMe = () => {
     <div
       className="card text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"
       style={{ maxWidth: '900px' }}
+      id="About"
     >
       <div className="row g-0">
         <div className="col-md-8">
