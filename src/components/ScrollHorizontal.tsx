@@ -20,8 +20,14 @@ const ScrollHorizontal: FC<Job> = ({ title }) => {
   console.log('working');
 
   return (
-    <div className="nose">
-      <a className="nose" style={{ backgroundColor: 'red' }} href={`#${title}`}>{title}</a>
+    <div className="nose text-center ">
+      <a
+        className="nav-link btn btn-outline-secondary border-0 text-light"
+        // style={{ backgroundColor: 'red' }}
+        href={`#${title}`}
+      >
+        {title}
+      </a>
     </div>
   );
 };

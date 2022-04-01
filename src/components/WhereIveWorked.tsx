@@ -49,6 +49,7 @@ const WhereIveWorked = () => {
       style={{ maxWidth: '900px' }}
       id="About"
     >
+      <h5 className="card-title fs-2">Where I've Worked</h5>
       <div className="row g-0">
         <div className="col-md-4">
           <div className="items text-success d-md-block">

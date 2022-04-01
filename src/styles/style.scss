@@ -58,9 +58,23 @@ $font-sizes: (
 
 .nose {
   height: 40px;
-  min-width: 150px;
+  min-width: 120px;
   margin: 5px;
 }
 
+.project1 {
+  background-image: url('https://res.cloudinary.com/db3njhxi0/image/upload/v1645838858/jnbkpsaqgk60yslhiko6.jpg');
+  background-position: center center;
+  // background-attachment: fixed;
+  background-size: cover;
+}
+// .mp {
+//   display: flex;
+// }
+// .project {
+//   z-index: 2;
+//   right: 450px;
+//   position: relative;
+// }
 // $text-font-family: 'Montserrat', sans-serif;
 @import '../../bootstrap/scss/bootstrap.scss';

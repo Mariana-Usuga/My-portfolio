@@ -7,6 +7,7 @@ import Main from '../components/Main';
 // import Email from '../components/Email';
 import AboutMe from '../components/AboutMe';
 import WhereIveWorked from '../components/WhereIveWorked';
+import IveBuilt from '../components/IveBuilt';
 
 const Portfolio = () => {
   console.log('working');
@@ -20,7 +21,7 @@ const Portfolio = () => {
       {/* </div> */}
       <AboutMe />
       <WhereIveWorked />
-
+      <IveBuilt />
     </>
   );
 };

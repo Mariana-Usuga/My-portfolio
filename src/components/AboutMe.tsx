@@ -11,10 +11,10 @@ const AboutMe = () => {
       style={{ maxWidth: '900px' }}
       id="About"
     >
+      <h5 className="card-title fs-2">About Me</h5>
       <div className="row g-0">
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title fs-2">About Me</h5>
             <p className="card-text fs-5 text-success">
               This is a wider card with supporting text below as a natural lead-in
               to additional content. This content is a little bit longer.
