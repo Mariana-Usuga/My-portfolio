@@ -3,7 +3,8 @@ const IveBuilt = () => {
   console.log('working');
   return (
     <div
-      className="card text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"
+      className="card center-aboutMe
+      margin-top-aboutMe bg-primary boder-primary mx-3"
       style={{ maxWidth: '900px' }}
       id="About"
     >
@@ -19,14 +20,17 @@ const IveBuilt = () => {
       >
         <div className="col-md-6">
           <img
-            style={{ width: '0px' }}
+            className="img_project1"
+            // style={{ width: '0' }}
             src="https://res.cloudinary.com/db3njhxi0/image/upload/v1645838858/jnbkpsaqgk60yslhiko6.jpg"
             alt=""
           />
         </div>
         <div
           className="card-body col-md-6 text-left project1"
+          style={{ color: '#a8b2d1' }}
         >
+          {/* <div className="project1_background"> */}
           <p>Featured Project</p>
           <h5 className="card-title">Maket Pul</h5>
           <p className="card-text">
@@ -39,18 +43,16 @@ const IveBuilt = () => {
             <li className="p-2 bd-highlight">NodeJS</li>
             <li className="p-2 bd-highlight">Express</li>
             <li className="p-2 bd-highlight">SASS</li>
-
-            {/* <li style={{ width: '80px' }}>NodeJS</li> */}
-            {/* <li style={{ width: '80px' }}>Express</li> */}
-            {/* <li style={{ width: '80px' }}>SASS</li> */}
           </ul>
           <div>
             <a href="git">git</a>
             <a href="abrir">abrir</a>
           </div>
         </div>
+
       </div>
     </div>
+  // </div>
   );
 };
 

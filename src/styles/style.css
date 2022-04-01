@@ -43,6 +43,16 @@
   }
 }
 
+@media (max-width: 700px) {
+  .img_project1 {
+    width: 70%;
+  }
+}
+
+.img_project1 {
+  width: 50%;
+}
+
 .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,9 +67,11 @@
 }
 
 .project1 {
-  background-image: url("https://res.cloudinary.com/db3njhxi0/image/upload/v1645838858/jnbkpsaqgk60yslhiko6.jpg");
-  background-position: center center;
   background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png");
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 /*!
