@@ -8,6 +8,7 @@ import Main from '../components/Main';
 import AboutMe from '../components/AboutMe';
 import WhereIveWorked from '../components/WhereIveWorked';
 import IveBuilt from '../components/IveBuilt';
+import OtherProject from '../components/OtherProject';
 
 const Portfolio = () => {
   console.log('working');
@@ -22,6 +23,34 @@ const Portfolio = () => {
       <AboutMe />
       <WhereIveWorked />
       <IveBuilt />
+      <div className="container">
+        <div className="row">
+          {/* <div className="col-4"> */}
+          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </OtherProject>
+          {/* </div> */}
+          {/* <div className="col-4"> */}
+          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </OtherProject>
+          {/* </div> */}
+          {/* <div className="col-4"> */}
+          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </OtherProject>
+          {/* </div> */}
+          {/* <div className="col-4"> */}
+          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </OtherProject>
+          {/* </div> */}
+        </div>
+      </div>
     </>
   );
 };
