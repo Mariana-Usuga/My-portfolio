@@ -1,25 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const GetInTouch = () => (
   <div
-    className="row text-center margin-top-aboutMe"
+    className="row text-center margin-top-aboutMe mt-5"
     // style={{ backgroundColor: 'red' }}
   >
     <h5
-      className=" card-title text-light m-3"
+      className="col-11 card-title text-light m-3 "
       style={{ fontSize: '40px' }}
     >
       Get In Touch
     </h5>
     <p
-      className="col-sm-6 text-success center-aboutMe"
+      className="col-12 col-sm-6 text-success center-aboutMe fs-5"
       // style={{ width: '550px' }}
     >
       Although I’m not currently looking for any new opportunities, my inbox is always open.
       Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     </p>
-    <div>
+    <div className="col-12">
       <button type="button" className=" btn btn-outline-secondary mx-5 m-3 mb-5">
-        Go somewhere
+        Say Hello
       </button>
     </div>
   </div>

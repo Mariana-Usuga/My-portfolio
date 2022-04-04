@@ -8,9 +8,9 @@ import WhereIveWorked from '../components/WhereIveWorked';
 import IveBuilt from '../components/IveBuilt';
 import OtherProject from '../components/OtherProject';
 import GetInTouch from '../components/GetInTouch';
-// import Footer from '../components/Footer';
 import SocialMedia from '../components/SocialMedia';
-// import Email from '../components/Email';
+import Email from '../components/Email';
+import StyledCredit from '../components/StyledCredit';
 
 const Portfolio = () => {
   console.log('working');
@@ -49,11 +49,12 @@ const Portfolio = () => {
           </div>
           <GetInTouch />
         </div>
-        <div className="col-md-1 order-3 order-sm-3 order-md-3" style={{ backgroundColor: 'yellow' }}>
-          {/* <Email /> */}
+        <div className="col-md-1 order-3 order-sm-3 order-md-3">
+          <Email />
           hola
         </div>
       </div>
+      <StyledCredit />
     </div>
   );
 };

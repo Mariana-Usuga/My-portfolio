@@ -1,19 +1,19 @@
-import { FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
+import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
 const SocialMedia = () => {
   console.log('working');
   return (
-    <div className="text-success">
-      <ul style={{ listStyle: 'none' }}>
+    <div className="text-success mt-5">
+      <ul className="d-flex  justify-content-evenly" style={{ listStyle: 'none' }}>
         <li>
-          <FaLinkedin />
+          <FaLinkedinIn style={{ fontSize: '25px' }} />
         </li>
         <li>
-          <GoMarkGithub />
+          <GoMarkGithub style={{ fontSize: '25px' }} />
         </li>
         <li>
-          <FaInstagramSquare />
+          <FaInstagram style={{ fontSize: '25px' }} />
         </li>
       </ul>
     </div>

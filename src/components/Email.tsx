@@ -6,20 +6,20 @@ const Email = () => {
       <div
         style={{
           // height: '25px',
-          transform: 'rotate(90deg)',
+          // transform: 'rotate(90deg)',
           // backgroundColor: 'red',
           // width: '30px',
           // marginTop: '150px',
         }}
         // mt-6 text-success mx-5 d-flex opacity-md-0
-        className="text-success"
+        className="text-success text-center"
       >
-        marianausugamontoya12344@gmail.com
+        marian12344@gmail.com
         {/* <div> */}
-        <hr className="text-light" />
+        {/* <hr className="text-light" /> */}
         {/* </div> */}
       </div>
-      <hr />
+      {/* <hr /> */}
     </>
   );
 };
