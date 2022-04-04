@@ -5,7 +5,7 @@ const IveBuilt = () => {
     <div
       className="card center-aboutMe
       margin-top-aboutMe bg-primary boder-primary mx-3"
-      style={{ maxWidth: '900px' }}
+      // style={{ maxWidth: '900px' }}
       id="About"
     >
       <h5 className="card-title fs-2 mb-0 text-light">Some Things Ive Built</h5>

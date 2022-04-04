@@ -5,12 +5,14 @@ const Email = () => {
     <>
       <div
         style={{
-          height: '25px',
+          // height: '25px',
           transform: 'rotate(90deg)',
-          width: '30px',
-          marginTop: '150px',
+          // backgroundColor: 'red',
+          // width: '30px',
+          // marginTop: '150px',
         }}
-        className="mt-6 text-success mx-5 sticky-top d-flex opacity-md-0"
+        // mt-6 text-success mx-5 d-flex opacity-md-0
+        className="text-success"
       >
         marianausugamontoya12344@gmail.com
         {/* <div> */}

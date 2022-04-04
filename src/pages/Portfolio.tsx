@@ -7,50 +7,54 @@ import AboutMe from '../components/AboutMe';
 import WhereIveWorked from '../components/WhereIveWorked';
 import IveBuilt from '../components/IveBuilt';
 import OtherProject from '../components/OtherProject';
-// import GetInTouch from '../components/GetInTouch';
+import GetInTouch from '../components/GetInTouch';
+// import Footer from '../components/Footer';
+import SocialMedia from '../components/SocialMedia';
+// import Email from '../components/Email';
 
 const Portfolio = () => {
   console.log('working');
   return (
-    <>
-      <NavBar />
-      {/* <div className="d-flex"> */}
-      {/* <SocialMedia /> */}
-      <Main />
-      {/* <Email /> */}
-      {/* </div> */}
-      <AboutMe />
-      <WhereIveWorked />
-      <IveBuilt />
-      <div className="container">
-        <div className="row">
-          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
-            Building a custom multisite compatible WordPress plugin to build global
-            search with Algolia
-          </OtherProject>
-          {/* </div> */}
-          {/* <div className="col-4"> */}
-          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
-            Building a custom multisite compatible WordPress plugin to build global
-            search with Algolia
-          </OtherProject>
-          {/* </div> */}
-          {/* <div className="col-4"> */}
-          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
-            Building a custom multisite compatible WordPress plugin to build global
-            search with Algolia
-          </OtherProject>
-          {/* </div> */}
-          {/* <div className="col-4"> */}
-          <OtherProject title="Integrating Algolia Search with WordPress Multisite">
-            Building a custom multisite compatible WordPress plugin to build global
-            search with Algolia
-          </OtherProject>
-          {/* </div> */}
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-1 order-2 order-sm-2 order-md-1">
+          <SocialMedia />
+        </div>
+        <div className="col-md-10 order-1 order-sm-1 order-md-2">
+          <NavBar />
+          <Main />
+          <AboutMe />
+          <WhereIveWorked />
+          <IveBuilt />
+          <h5 className="card-title fs-2 mb-0 text-light">Some Things Ive Built</h5>
+          <div className="container">
+            <div className="row g-4 justify-content-center">
+              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+                Building a custom multisite compatible WordPress plugin to build global
+                search with Algolia
+              </OtherProject>
+              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+                Building a custom multisite compatible WordPress plugin to build global
+                search with Algolia
+              </OtherProject>
+              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+                Building a custom multisite compatible WordPress plugin to build global
+                search with Algolia
+              </OtherProject>
+              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+                Building a custom multisite compatible WordPress plugin to build global
+                search with Algolia
+              </OtherProject>
+            </div>
+          </div>
+          <GetInTouch />
+        </div>
+        <div className="col-md-1 order-3 order-sm-3 order-md-3" style={{ backgroundColor: 'yellow' }}>
+          {/* <Email /> */}
+          hola
         </div>
       </div>
-      {/* <GetInTouch /> */}
-    </>
+    </div>
   );
 };
 
