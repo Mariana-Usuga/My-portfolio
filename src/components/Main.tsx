@@ -23,7 +23,9 @@ const Main = () => {
         human-centered products at
       </p>
       <div>
-        <button className="btn btn-outline-secondary mx-5" type="button">Get In Touch</button>
+        <button className="btn btn-outline-secondary mx-5" type="button">
+          Get In Touch
+        </button>
       </div>
     </div>
   );
