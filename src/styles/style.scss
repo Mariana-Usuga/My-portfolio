@@ -52,6 +52,21 @@ $font-sizes: (
   }
 }
 
+@media (min-width: 770px) {
+  .nose {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: '550px';
+    top: 30%;
+  }
+  .nose--2 {
+    top: 50px;
+    transform: rotate(90deg);
+    background-color: yellow;
+  }
+}
+
 @media (max-width: 700px) {
   .img_project1 {
     width: 70%;

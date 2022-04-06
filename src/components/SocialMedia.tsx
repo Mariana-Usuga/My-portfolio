@@ -4,15 +4,24 @@ import { GoMarkGithub } from 'react-icons/go';
 const SocialMedia = () => {
   console.log('working');
   return (
-    <div className="text-success mt-5">
-      <ul className="d-flex  justify-content-evenly" style={{ listStyle: 'none' }}>
-        <li>
-          <FaLinkedinIn style={{ fontSize: '25px' }} />
+    <div className="text-success">
+      <ul
+        className="d-flex justify-content-center nose"
+        style={{
+          listStyle: 'none',
+          // backgroundColor: 'yellow',
+          // position: 'fixed',
+        }}
+      >
+        <li className="align-items-end mt-4">
+          <FaLinkedinIn
+            style={{ fontSize: '25px' }}
+          />
         </li>
-        <li>
+        <li className="align-items-end mt-4">
           <GoMarkGithub style={{ fontSize: '25px' }} />
         </li>
-        <li>
+        <li className="align-items-end mt-4">
           <FaInstagram style={{ fontSize: '25px' }} />
         </li>
       </ul>

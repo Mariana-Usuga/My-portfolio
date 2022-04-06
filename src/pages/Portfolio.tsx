@@ -17,7 +17,7 @@ const Portfolio = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-1 order-2 order-sm-2 order-md-1">
+        <div className="col-md-1 order-2 order-sm-2 order-md-1" style={{ bottom: '0' }}>
           <SocialMedia />
         </div>
         <div className="col-md-10 order-1 order-sm-1 order-md-2">
@@ -51,7 +51,6 @@ const Portfolio = () => {
         </div>
         <div className="col-md-1 order-3 order-sm-3 order-md-3">
           <Email />
-          hola
         </div>
       </div>
       <StyledCredit />
