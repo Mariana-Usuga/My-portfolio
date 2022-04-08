@@ -7,11 +7,11 @@ const AboutMe = () => {
 
   return (
     <div
-      className="card text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"
+      className=" text-light center-aboutMe margin-top-aboutMe bg-primary"
       style={{ maxWidth: '900px' }}
       id="About"
     >
-      <h5 className="card-title fs-2">About Me</h5>
+      <h5 className="card-title fs-2 ms-4 mb-4">About Me</h5>
       <div className="row g-0">
         <div className="col-md-8">
           <div className="card-body">

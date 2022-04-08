@@ -9,10 +9,16 @@ $info: rgb(26, 19, 54);
 $font-sizes: (
   0: 13px,
   1: 75px,
-  2: 40px,
+  2: 30px,
   5: 18px,
   6: 20px,
 );
+
+.scrollh a:hover {
+  background-color: rgb(75, 85, 99);
+  opacity: 0.25;
+  color: $secondary;
+}
 
 .text-font-family-navbar {
   font-family: 'Montserrat', sans-serif;
@@ -41,6 +47,9 @@ $font-sizes: (
   width: 100%;
   top: 60px;
 }
+.nose-4 {
+  // width: 200px;
+}
 @media (min-width: 992px) {
   .hideBars {
     opacity: 0;
@@ -50,21 +59,35 @@ $font-sizes: (
     display: flex;
     overflow-x: auto;
   }
+  .nose-4 {
+    width: 350px;
+  }
 }
 
 @media (min-width: 770px) {
-  .nose {
+  .nose-3 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: '550px';
-    top: 30%;
+    margin-top: 200px;
+    height: 100%;
+    position: fixed;
+  }
+  .link {
+    margin-top: 20px;
   }
   .nose--2 {
-    top: 50px;
-    transform: rotate(90deg);
-    background-color: yellow;
+    writing-mode: vertical-lr;
+    position: fixed;
+    margin-top: 360px;
   }
+}
+.nose--2 {
+  // background-color: yellow;
+  padding: 0;
+}
+.nose-3 {
+  justify-content: center;
+  list-style: none;
 }
 
 @media (max-width: 700px) {
@@ -90,15 +113,11 @@ $font-sizes: (
 }
 
 .project1 {
-  // background-image: url('https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png');
-  // background-position: center center;
   background-size: cover;
-  // box-shadow: inset 10px 80px 80px 90px #233554;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png');
   background-position: center top;
   background-repeat: no-repeat;
-  // height: 100px;
 }
 
 // $text-font-family: 'Montserrat', sans-serif;

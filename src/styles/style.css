@@ -1,3 +1,9 @@
+.scrollh a:hover {
+  background-color: #4b5563;
+  opacity: 0.25;
+  color: #0693e3;
+}
+
 .text-font-family-navbar {
   font-family: 'Montserrat', sans-serif;
 }
@@ -41,10 +47,13 @@
     display: flex;
     overflow-x: auto;
   }
+  .nose-4 {
+    width: 350px;
+  }
 }
 
 @media (min-width: 770px) {
-  .nose {
+  .nose-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,18 +61,31 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: '550px';
-    top: 30%;
+    margin-top: 200px;
+    height: 100%;
+    position: fixed;
+  }
+  .link {
+    margin-top: 20px;
   }
   .nose--2 {
-    top: 50px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    background-color: yellow;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    position: fixed;
+    margin-top: 360px;
   }
+}
+
+.nose--2 {
+  padding: 0;
+}
+
+.nose-3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
 }
 
 @media (max-width: 700px) {
@@ -8742,7 +8764,7 @@ fieldset:disabled .btn {
 }
 
 .fs-2 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.3125rem + 0.75vw) !important;
 }
 
 .fs-5 {
@@ -11998,7 +12020,7 @@ fieldset:disabled .btn {
     font-size: 4.6875rem !important;
   }
   .fs-2 {
-    font-size: 2.5rem !important;
+    font-size: 1.875rem !important;
   }
 }
 

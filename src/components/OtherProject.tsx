@@ -9,29 +9,40 @@ interface Project {
   id?:number
   title:string
   description?: string
+  tecnologies:Array<string>
 }
 
-const OtherProject: FC<Project> = ({ title, children }) => {
+const OtherProject: FC<Project> = ({ title, children, tecnologies }) => {
   console.log('worki');
   return (
-    // col-md-6 col-lg-4
-    <div className="col-4" style={{ width: '350px' }}>
-      <div className="">
-        {/* <div className=""> */}
-        <div className="p-4 bg-info text-success ">
-          <ul className="d-flex">
-            <li><FaFolder /></li>
-            <li><FaGithub /></li>
-            <li><FiExternalLink /></li>
-          </ul>
-          <h5 className="">{title}</h5>
-          <h6 className=" mb-2 text-muted">Card subtitle</h6>
-          <p className="">{children}</p>
-          {/* <a href="#" className="card-link">Card link</a> */}
-          {/* <a href="#" className="card-link">Another link</a> */}
+    <div
+      className="col-4 rounded nose-4"
+      // style={{ width: '350px' }}
+    >
+      <div className="p-4 bg-info text-success rounded-3">
+        <div
+          className="row mb-4"
+        >
+          <div className="col-6">
+            <FaFolder style={{ fontSize: '30px' }} />
+          </div>
+          <div className="col">
+            <FaGithub style={{ fontSize: '20px' }} />
+          </div>
+          <div className="col">
+            <FiExternalLink style={{ fontSize: '20px' }} />
+          </div>
         </div>
+        <h5 className="">{title}</h5>
+        <p className="">{children}</p>
+        <ul className="d-flex mt-1 mb-0" style={{ listStyleType: 'none' }}>
+          {tecnologies.map((tecnologie) => (
+            <li className="me-3 text-font-family-navbar fw-bold fs-0">
+              {tecnologie}
+            </li>
+          ))}
+        </ul>
       </div>
-      {/* </div> */}
     </div>
   );
 };

@@ -3,19 +3,19 @@ const IveBuilt = () => {
   console.log('working');
   return (
     <div
-      className="card center-aboutMe
+      className="center-aboutMe
       margin-top-aboutMe bg-primary boder-primary mx-3"
-      // style={{ maxWidth: '900px' }}
-      id="About"
+      id="Work"
     >
-      <h5 className="card-title fs-2 mb-0 text-light">Some Things Ive Built</h5>
+      <h5 className="card-title fs-2 mb-4 text-light ps-2 mb-3">
+        Some Things Ive Built
+      </h5>
       <div
         className="text-success row g-0"
         style={{
         // backgroundColor: 'yellow',
         // width: '400px',
           marginBottom: '100px',
-          // marginTop: '100px',
         }}
       >
         <div className="col-md-6">

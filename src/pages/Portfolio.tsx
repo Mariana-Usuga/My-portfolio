@@ -17,7 +17,7 @@ const Portfolio = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-1 order-2 order-sm-2 order-md-1" style={{ bottom: '0' }}>
+        <div className="col-md-1 order-2 order-sm-2 order-md-1">
           <SocialMedia />
         </div>
         <div className="col-md-10 order-1 order-sm-1 order-md-2">
@@ -26,22 +26,39 @@ const Portfolio = () => {
           <AboutMe />
           <WhereIveWorked />
           <IveBuilt />
-          <h5 className="card-title fs-2 mb-0 text-light">Some Things Ive Built</h5>
-          <div className="container">
-            <div className="row g-4 justify-content-center">
-              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+          <h5 className="card-title fs-2 mb-5 text-light text-center margin-top-aboutMe">
+            Some Things Ive Built
+          </h5>
+          <div
+            className="container"
+            style={{ backgroundColor: 'yellow' }}
+          >
+            <div className="row g-3 justify-content-center">
+              <OtherProject
+                title="Integrating Algolia Search with WordPress Multisite"
+                tecnologies={['React', 'Node']}
+              >
                 Building a custom multisite compatible WordPress plugin to build global
                 search with Algolia
               </OtherProject>
-              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+              <OtherProject
+                title="Integrating Algolia Search with WordPress Multisite"
+                tecnologies={['React', 'Node']}
+              >
                 Building a custom multisite compatible WordPress plugin to build global
                 search with Algolia
               </OtherProject>
-              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+              <OtherProject
+                title="Integrating Algolia Search with WordPress Multisite"
+                tecnologies={['React', 'Node']}
+              >
                 Building a custom multisite compatible WordPress plugin to build global
                 search with Algolia
               </OtherProject>
-              <OtherProject title="Integrating Algolia Search with WordPress Multisite">
+              <OtherProject
+                title="Integrating Algolia Search with WordPress Multisite"
+                tecnologies={['React', 'Node']}
+              >
                 Building a custom multisite compatible WordPress plugin to build global
                 search with Algolia
               </OtherProject>

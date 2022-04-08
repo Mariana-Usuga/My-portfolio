@@ -21,8 +21,6 @@ const NavBar: FC = () => {
         <div
           className={!isOpen ? 'offcanvas offcanvas-end hide'
             : 'show'}
-          // id="offcanvasNavbar"
-          // aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="text-font-family-navbar text-center bg-primary offcanvas-body">
             <ul

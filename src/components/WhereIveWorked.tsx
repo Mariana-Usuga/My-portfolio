@@ -45,12 +45,12 @@ const WhereIveWorked = () => {
 
   return (
     <div
-      className="card text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"
+      className="text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"
       style={{ maxWidth: '900px' }}
-      id="About"
+      id="Experiencie"
     >
-      <h5 className="card-title fs-2">Where I've Worked</h5>
       <div className="row g-0">
+        <h5 className="card-title fs-2 mb-4" style={{ marginLeft: '100px' }}>Where I've Worked</h5>
         <div className="col-md-4">
           <div className="items text-success d-md-block">
             {jobChoose.map((job) => (
