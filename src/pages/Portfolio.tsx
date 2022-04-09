@@ -5,12 +5,13 @@ import NavBar from '../components/NavBar';
 import Main from '../components/Main';
 import AboutMe from '../components/AboutMe';
 import WhereIveWorked from '../components/WhereIveWorked';
-import IveBuilt from '../components/IveBuilt';
 import OtherProject from '../components/OtherProject';
 import GetInTouch from '../components/GetInTouch';
 import SocialMedia from '../components/SocialMedia';
 import Email from '../components/Email';
 import StyledCredit from '../components/StyledCredit';
+import Projects from '../components/Projects';
+// import Example from '../components/example';
 
 const Portfolio = () => {
   console.log('working');
@@ -25,13 +26,13 @@ const Portfolio = () => {
           <Main />
           <AboutMe />
           <WhereIveWorked />
-          <IveBuilt />
+          <Projects />
           <h5 className="card-title fs-2 mb-5 text-light text-center margin-top-aboutMe">
-            Some Things Ive Built
+            Other Projects
           </h5>
           <div
             className="container"
-            style={{ backgroundColor: 'yellow' }}
+            // style={{ backgroundColor: 'yellow' }}
           >
             <div className="row g-3 justify-content-center">
               <OtherProject
@@ -71,6 +72,7 @@ const Portfolio = () => {
         </div>
       </div>
       <StyledCredit />
+      {/* <Example /> */}
     </div>
   );
 };

@@ -1,56 +1,103 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/no-unused-prop-types */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-const IveBuilt = () => {
+import { FC } from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { FiExternalLink } from 'react-icons/fi';
+
+interface Project {
+  id?:number
+  title:string
+  description?: string
+  tecnologies:Array<string>
+}
+// {/* className={title === 'U Dance'
+//  ? 'rounded p-sm-3 prr' : 'rounded p-sm-3 prr  text-sm-end'}
+
+const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => {
   console.log('working');
   return (
-    <div
-      className="text-success mt-5 center-aboutMe div-main"
-      // style={{ width: '80%' }}
-    >
-      <div>
-        <h3>Some Things I&apos;ve Built</h3>
-      </div>
+    <div className={`${title === 'Maket Pul' ? 'main-proje' : null}`}>
+      {title === 'Maket Pul'
+        ? (
+          <div
+            className="img-built "
+          >
+            <img
+              src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+              alt=""
+            />
+          </div>
+        ) : null}
       <div
-        className=""
-        // style={{ backgroundColor: 'red' }}
+        className="descr"
+        // style={{ backgroundColor: 'yellow' }}
       >
         <div
-          className="img-built"
+          className={`${title === 'U Dance' ? null : 'text-sm-end'}`}
+          style={{ width: '90%' }}
         >
-          <img
-            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1645838858/jnbkpsaqgk60yslhiko6.jpg"
-            alt=""
-          />
-        </div>
-        <div className="descr mt-4">
-          <div
-            className="text-end"
-            style={{ fontSize: '28px', width: '90%' }}
+          <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
+            Featured Project
+          </h4>
+          <h5
+            className="fs-3"
           >
-            <h5>Halcyon Theme</h5>
-            <h4 className="text-end">Featured Project</h4>
-          </div>
-          {/* <div > */}
-          <p
-            className="rounded p-3 prr text-end"
-            style={{ backgroundColor: 'rgb(17, 24, 39)' }}
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Exercitationem consectetur magni iste nam rem. Quas qui dignissimos officia,
-            voluptas id cum, facere veniam cupiditate excepturi molestiae culpa placeat harum eos!
-          </p>
-          {/* </div> */}
-          <div>
-            <ul className="d-flex">
-              <li>React</li>
-              <li>Redux</li>
-              <li>NodeJS</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
+            {title}
+          </h5>
         </div>
+        <p
+          className={`rounded p-sm-3 prr ${title === 'U Dance' ? null : 'text-sm-end'}`}
+        >
+          {children}
+        </p>
+        <ul
+          className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
+          style={{
+            listStyleType: 'none',
+            // width: '90%',
+          }}
+        >
+          {tecnologies.map((tecnologie) => (
+            <li
+              className="col-2 me-3 text-font-family-navbar fw-bold"
+              // style={{ backgroundColor: 'pink' }}
+            >
+              {tecnologie}
+            </li>
+          ))}
+        </ul>
+        <ul
+          className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
+          style={{
+            listStyleType: 'none',
+            // width: '90%',
+          }}
+        >
+          <li
+            className="col-2 me-3"
+          >
+            <FaGithub style={{ fontSize: '30px' }} />
+          </li>
+          <li className="col-2 me-3">
+            <FiExternalLink style={{ fontSize: '30px' }} />
+          </li>
+        </ul>
       </div>
+      {title === 'U Dance'
+        ? (
+          <div
+            className="img-built "
+          >
+            <img
+              src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+              alt=""
+            />
+          </div>
+        ) : null}
     </div>
+  // </div>
   );
 };
 

@@ -17,7 +17,7 @@ const OtherProject: FC<Project> = ({ title, children, tecnologies }) => {
   return (
     <div
       className="col-4 rounded nose-4"
-      // style={{ width: '350px' }}
+      style={{ width: '350px' }}
     >
       <div className="p-4 bg-info text-success rounded-3">
         <div

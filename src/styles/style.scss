@@ -7,11 +7,13 @@ $success: #8892b0;
 $info: rgb(26, 19, 54);
 
 $font-sizes: (
-  0: 13px,
+  // 0: 13px,
   1: 75px,
-  2: 30px,
-  5: 18px,
-  6: 20px,
+  2: clamp(26px, 5vw, 2.2rem),
+  3: 28px,
+  6: 15px // 2: 30px,
+  // 5: 18px,
+  // 6: 20px,
 );
 
 // .img-built {
@@ -24,48 +26,53 @@ $font-sizes: (
 //   // height: 80%;
 // }
 .img-built {
-  // width: 200px;
-  // background-color: aqua;
-  // left: 20px;
-  display: grid;
-  grid-column: 1 / -1;
-  height: 100%;
+  // width: 270px;
+  background-color: aqua;
   opacity: 0.25;
 }
 .img-built img {
-  width: 200px;
-  // height: 80%;
+  width: 250px;
 }
 .descr {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  height: 100%;
-  grid-column: 1 / -1;
-  // padding: 40px 40px 30px;
-  z-index: 5;
-  // position: relative;
-  // right: 230px;
+  // bottom: 120px;
+  position: relative;
+  right: 200px;
+  // background-color: yellow;
+  // width: 500px;
 }
-// @media (min-width: 640px) {
-// aqui pariba
-// .img-built {
-//   width: 125%;
-//   background-color: aqua;
-//   left: 20px;
-// }
-// .img-built img {
-//   width: 125%;
-//   // height: 80%;
-// }
-// .prr {
-//   width: 90%;
-// }
-// .div-main {
-//   width: 90%;
-// }
-// }
+.main-proje {
+  display: flex;
+}
+@media (min-width: 640px) {
+  .descr {
+    // bottom: 120px;
+    position: relative;
+    right: 100px;
+  }
+  .main-proje {
+    // left: 100px;
+    // width: 90%;
+    background-color: aqua;
+    margin-right: 20px;
+  }
+  .img-built {
+    // width: 500px;
+    background-color: aqua;
+    // left: 20px;
+  }
+  .img-built img {
+    width: 700px;
+    // height: 80%;
+  }
+  .prr {
+    width: 90%;
+    background-color: rgb(17, 24, 39);
+  }
+  .div-main {
+    // width: 80%;
+    // background-color: yellow;
+  }
+}
 //font family adidas: --gl-body-font-set-family-functional-7: AdihausDIN;
 // --gl-font-family-fallback: 'Helvetica','Arial',sans-serif;
 

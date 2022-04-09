@@ -1,27 +1,38 @@
 .img-built {
-  grid-column: 1 / -1;
-  height: 100%;
+  background-color: aqua;
   opacity: 0.25;
 }
 
 .img-built img {
-  width: 200px;
+  width: 250px;
 }
 
 .descr {
+  position: relative;
+  right: 200px;
+}
+
+.main-proje {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  height: 100%;
-  grid-column: 1 / -1;
-  z-index: 5;
+}
+
+@media (min-width: 640px) {
+  .main-proje {
+    background-color: aqua;
+    margin-right: 20px;
+  }
+  .img-built {
+    background-color: aqua;
+  }
+  .img-built img {
+    width: 700px;
+  }
+  .prr {
+    width: 90%;
+    background-color: #111827;
+  }
 }
 
 .scrollh a:hover {
@@ -8781,24 +8792,20 @@ fieldset:disabled .btn {
   font-family: var(--bs-font-monospace) !important;
 }
 
-.fs-0 {
-  font-size: 0.8125rem !important;
-}
-
 .fs-1 {
   font-size: calc(1.59375rem + 4.125vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.3125rem + 0.75vw) !important;
+  font-size: clamp(26px, 5vw, 2.2rem) !important;
 }
 
-.fs-5 {
-  font-size: 1.125rem !important;
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw) !important;
 }
 
 .fs-6 {
-  font-size: 1.25rem !important;
+  font-size: 0.9375rem !important;
 }
 
 .fst-italic {
@@ -12045,8 +12052,8 @@ fieldset:disabled .btn {
   .fs-1 {
     font-size: 4.6875rem !important;
   }
-  .fs-2 {
-    font-size: 1.875rem !important;
+  .fs-3 {
+    font-size: 1.75rem !important;
   }
 }
 
