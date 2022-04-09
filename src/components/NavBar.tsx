@@ -10,7 +10,7 @@ const NavBar: FC = () => {
   return (
     <nav className="navbar navbar-expand-lg pt-4 ps-3">
       <div className="container-fluid">
-        <a className="navbar-brand text-light" href="#">Mariana</a>
+        <a className="navbar-brand text-light text-font-family-navbar" href="#">Mariana</a>
         <button type="button" className="hideBars bg-primary text-secondary border-0">
           {!isOpen ? (
             <FaAlignRight style={{ fontSize: '35px' }} onClick={() => setOpen(true)} />
@@ -39,7 +39,8 @@ const NavBar: FC = () => {
               ))}
               <li className="nav-item p-4">
                 <button
-                  className="btn btn-outline-secondary fw-bold"
+                // fw-bold
+                  className="btn btn-outline-secondary "
                   type="button"
                 >
                   Resume

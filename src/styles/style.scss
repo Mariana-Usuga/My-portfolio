@@ -14,6 +14,61 @@ $font-sizes: (
   6: 20px,
 );
 
+// .img-built {
+//   width: 0;
+//   background-color: aqua;
+//   left: 20px;
+// }
+// .img-built img {
+//   width: 0;
+//   // height: 80%;
+// }
+.img-built {
+  // width: 200px;
+  // background-color: aqua;
+  // left: 20px;
+  display: grid;
+  grid-column: 1 / -1;
+  height: 100%;
+  opacity: 0.25;
+}
+.img-built img {
+  width: 200px;
+  // height: 80%;
+}
+.descr {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+  grid-column: 1 / -1;
+  // padding: 40px 40px 30px;
+  z-index: 5;
+  // position: relative;
+  // right: 230px;
+}
+// @media (min-width: 640px) {
+// aqui pariba
+// .img-built {
+//   width: 125%;
+//   background-color: aqua;
+//   left: 20px;
+// }
+// .img-built img {
+//   width: 125%;
+//   // height: 80%;
+// }
+// .prr {
+//   width: 90%;
+// }
+// .div-main {
+//   width: 90%;
+// }
+// }
+//font family adidas: --gl-body-font-set-family-functional-7: AdihausDIN;
+// --gl-font-family-fallback: 'Helvetica','Arial',sans-serif;
+
 .scrollh a:hover {
   background-color: rgb(75, 85, 99);
   opacity: 0.25;
