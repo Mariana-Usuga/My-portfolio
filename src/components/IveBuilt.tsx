@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable no-lone-blocks */
@@ -11,8 +12,10 @@ interface Project {
   title:string
   description?: string
   tecnologies:Array<string>
+  repository?:string
+  deployment?:string
 }
-const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => (
+const IveBuilt: FC<Project> = ({ title, children, tecnologies, deployment, repository }) => (
   <div
     className="main-proje"
   >
@@ -73,10 +76,14 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => (
         <li
           className="col-2 me-3"
         >
-          <FaGithub style={{ fontSize: '30px' }} />
+          <a href={repository} target="_blank" style={{ color: 'white' }} rel="noreferrer">
+            <FaGithub style={{ fontSize: '30px' }} />
+          </a>
         </li>
         <li className="col-2 me-3">
-          <FiExternalLink style={{ fontSize: '30px' }} />
+          <a href={deployment} target="_blank" style={{ color: 'white' }} rel="noreferrer">
+            <FiExternalLink style={{ fontSize: '30px' }} />
+          </a>
         </li>
       </ul>
     </div>

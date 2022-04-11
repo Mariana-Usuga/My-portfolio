@@ -42,7 +42,14 @@ const NavBar: FC = () => {
                   className="btn btn-outline-secondary "
                   type="button"
                 >
-                  Resume
+                  <a
+                    href="file:///C:/Users/Mariana/Downloads/Mariana%20Usuga%20(12).pdf"
+                    target="_blank"
+                    className="text-light"
+                    rel="noreferrer"
+                  >
+                    Resume
+                  </a>
                 </button>
               </li>
             </ul>

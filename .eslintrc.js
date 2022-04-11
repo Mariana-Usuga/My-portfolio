@@ -20,7 +20,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.tsx', '.pdf'] }],
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'object-curly-newline': [

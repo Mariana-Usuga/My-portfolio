@@ -19,12 +19,10 @@ $font-sizes: (
   content: 'n';
   display: 'block';
   position: absolute;
-  // left: 0px;
   color: $secondary;
 }
 
 .img-built {
-  // width: 270px;
   background-color: aqua;
   opacity: 0.25;
 }
@@ -36,7 +34,6 @@ $font-sizes: (
   right: 200px;
 }
 .descr2 {
-  // margin: 0 auto;
   z-index: 10;
   position: relative;
   margin-left: 10px;
@@ -45,8 +42,6 @@ $font-sizes: (
   opacity: 0.25;
   background-color: red;
   position: relative;
-  // right: 0px;
-  // z-index: 10;
   right: 160px;
 }
 .img-built2 img {
@@ -60,41 +55,25 @@ $font-sizes: (
   margin-top: 100px;
 }
 @media (min-width: 640px) {
-  .img-built2 {
-    // position: relative;
-    // right: 0px;
-    // left: 500px;
-  }
   .descr {
-    // bottom: 120px;
     position: relative;
     right: 90px;
   }
   .main-proje {
-    // margin-right: 20px;
     margin-left: 100px;
   }
   .img-built {
-    // width: 500px;
     background-color: aqua;
-    // left: 20px;
   }
   .img-built img,
   .img-built2 img {
     width: 600px;
-    // height: 80%;
   }
   .prr {
     width: 90%;
     background-color: rgb(17, 24, 39);
   }
-  .div-main {
-    // width: 80%;
-    // background-color: yellow;
-  }
 }
-//font family adidas: --gl-body-font-set-family-functional-7: AdihausDIN;
-// --gl-font-family-fallback: 'Helvetica','Arial',sans-serif;
 
 .scrollh a:hover {
   background-color: rgb(75, 85, 99);

@@ -17,8 +17,8 @@ const WorkPlace: FC<Job> = ({ title, items }) => (
     <ul style={{ listStyleType: 'none' }}>
       {items.map((item) => (
         <div className="d-flex">
-          <FaStar className="me-2 fs-3 text-secondary" />
-          <li className="mb-2 nose-5">
+          <FaStar className="me-2 fs-6 text-secondary" />
+          <li className="mb-2 nose-5 fs-5 text-success">
             {item}
           </li>
         </div>

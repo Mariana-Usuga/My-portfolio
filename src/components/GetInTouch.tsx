@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const GetInTouch = () => (
-  <div className=" margin-top-aboutMe" style={{ marginBottom: '200px' }}>
+  <div className=" margin-top-aboutMe" id="Contact" style={{ marginBottom: '200px' }}>
     <div
       className="row text-center"
       id="Contact"
@@ -14,8 +14,8 @@ const GetInTouch = () => (
       <p
         className="col-12 col-sm-6 text-success center-aboutMe fs-5"
       >
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        I’m looking for new challenges in my field, I would love to share more
+        of my experience with you. Please, feel free to write me by email
       </p>
       <div className="col-12 mt-4">
         <button
@@ -23,7 +23,9 @@ const GetInTouch = () => (
           className=" btn btn-outline-secondary p-3 px-4
          mx-5 m-3 mb-5"
         >
-          Say Hello
+          <a href="mailto:marianausugamontoya12344@gmail.com" style={{ color: 'white' }}>
+            Say Hello
+          </a>
         </button>
       </div>
     </div>

@@ -27,14 +27,6 @@ const LayoutWorkPlace = () => {
     title: 'Make It Real',
     from: 'August 2021',
     to: 'Feb 2022',
-  },
-  {
-    id: 2,
-    title: 'Otro Lugar',
-    items: ['mariana mariana mariana mariana mariana marianamariana mariana mariana mariana ',
-      'This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer.'],
-    from: 'August 2021',
-    to: 'Feb 2022',
   }]);
 
   return (

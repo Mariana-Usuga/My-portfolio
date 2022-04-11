@@ -18,7 +18,10 @@ const AboutMe = () => {
               Hi! My name is Mariana, I&apos;m glad you&apos;re here and I would like
               to tell you a little about myself. By the year 2020 I begin to study
               Java, HTML, CSS, JavaScript then by the year 2021 I begin a bootcamp, here
-              I learn React, Redux, NodeJS, MongoDB. I
+              I learn React, Redux, NodeJS, MongoDB. I learned from this experience to work
+              effectively in teams using the SCRUM methodology, have provided clean and
+              efficient code using GIT to store their code. I am an intelligent person,
+              with great capacity for teamwork and ready to face great challenges.
             </p>
           </div>
           <div className="d-flex text-success">

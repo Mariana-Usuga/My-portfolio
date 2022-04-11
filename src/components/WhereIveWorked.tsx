@@ -14,19 +14,11 @@ const WhereIveWorked = () => (
             <WorkPlace
               id={1}
               title="Make It Real"
-              items={['This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer',
-                'This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer.']}
-            />
-)}
-        />
-        <Route
-          path={`${2}`}
-          element={(
-            <WorkPlace
-              id={2}
-              title="Otro-Lugar"
-              items={['This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer',
-                'This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer.']}
+              items={[
+                'Worked effectively in teams using the SCRUM methodology',
+                'Provided clean and efficient code using GIT to store their code',
+                'Elaborated  multiple visual elements by translating UI/UX design wireframes into code. Images were uploaded to Cloudinary',
+              ]}
             />
 )}
         />
