@@ -1,10 +1,7 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/no-unused-prop-types */
 import { FC } from 'react';
-
-// interface CardProps {
-//   job: object
-// }
+import { FaStar } from 'react-icons/fa';
 
 interface Job {
   id?:number
@@ -19,15 +16,16 @@ const WorkPlace: FC<Job> = ({ title, items }) => {
   return (
     <div className="card-body" id={title}>
       <h5 className="card-title fs-2">{title}</h5>
-      <ul>
+      <ul style={{ listStyleType: 'none' }}>
         {items.map((item) => (
-          <li>{item}</li>
+          <div className="d-flex">
+            <FaStar className="me-2 fs-3 text-secondary" />
+            <li className="mb-2 nose-5">
+              {item}
+            </li>
+          </div>
         ))}
       </ul>
-      {/* <p className="card-text fs-5 text-success">
-        This is a wider card with supporting text below as a natural lead-in
-        to additional content. This content is a little bit longer.
-      </p> */}
     </div>
   );
 };

@@ -1,49 +1,53 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { FC } from 'react';
-import { FaFolder, FaGithub } from 'react-icons/fa';
-import { FiExternalLink } from 'react-icons/fi';
 
-interface Project {
-  id?:number
-  title:string
-  description?: string
-  tecnologies:Array<string>
-}
+import CardProject from './CardProject';
 
-const OtherProject: FC<Project> = ({ title, children, tecnologies }) => {
+const OtherProject = () => {
   console.log('worki');
   return (
-    <div
-      className="col-4 rounded nose-4"
-      style={{ width: '350px' }}
-    >
-      <div className="p-4 bg-info text-success rounded-3">
-        <div
-          className="row mb-4"
-        >
-          <div className="col-6">
-            <FaFolder style={{ fontSize: '30px' }} />
-          </div>
-          <div className="col">
-            <FaGithub style={{ fontSize: '20px' }} />
-          </div>
-          <div className="col">
-            <FiExternalLink style={{ fontSize: '20px' }} />
-          </div>
+    <>
+      <h5 className="card-title fs-2 mb-5 text-light text-center margin-top-aboutMe">
+        Other Projects
+      </h5>
+      <div
+        className="container"
+      >
+        <div className="row g-3 justify-content-center">
+          <CardProject
+            title="Integrating Algolia Search with WordPress Multisite"
+            tecnologies={['React', 'Node']}
+          >
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </CardProject>
+          <CardProject
+            title="Integrating Algolia Search with WordPress Multisite"
+            tecnologies={['React', 'Node']}
+          >
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </CardProject>
+          <CardProject
+            title="Integrating Algolia Search with WordPress Multisite"
+            tecnologies={['React', 'Node']}
+          >
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </CardProject>
+          <CardProject
+            title="Integrating Algolia Search with WordPress Multisite"
+            tecnologies={['React', 'Node']}
+          >
+            Building a custom multisite compatible WordPress plugin to build global
+            search with Algolia
+          </CardProject>
         </div>
-        <h5 className="">{title}</h5>
-        <p className="">{children}</p>
-        <ul className="d-flex mt-1 mb-0" style={{ listStyleType: 'none' }}>
-          {tecnologies.map((tecnologie) => (
-            <li className="me-3 text-font-family-navbar fw-bold fs-0">
-              {tecnologie}
-            </li>
-          ))}
-        </ul>
       </div>
-    </div>
+    </>
   );
 };
 

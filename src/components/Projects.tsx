@@ -4,7 +4,7 @@ import IveBuilt from './IveBuilt';
 
 const Projects = () => (
   <div
-    className="text-light mt-5 center-aboutMe div-main"
+    className="text-light center-aboutMe div-main margin-top-aboutMe"
   >
     <div>
       <h3 className="fs-2 mb-4">Some Things I&apos;ve Built</h3>

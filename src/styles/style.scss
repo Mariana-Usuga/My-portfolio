@@ -7,24 +7,22 @@ $success: #8892b0;
 $info: rgb(26, 19, 54);
 
 $font-sizes: (
-  // 0: 13px,
+  // 0: 20px,
   1: 75px,
   2: clamp(26px, 5vw, 2.2rem),
   3: 28px,
   6: 15px // 2: 30px,
   // 5: 18px,
-  // 6: 20px,
+  // 6: 20px,,,
 );
+.nose-5 li::before {
+  content: 'n';
+  display: 'block';
+  position: absolute;
+  // left: 0px;
+  color: $secondary;
+}
 
-// .img-built {
-//   width: 0;
-//   background-color: aqua;
-//   left: 20px;
-// }
-// .img-built img {
-//   width: 0;
-//   // height: 80%;
-// }
 .img-built {
   // width: 270px;
   background-color: aqua;
@@ -34,34 +32,56 @@ $font-sizes: (
   width: 250px;
 }
 .descr {
-  // bottom: 120px;
   position: relative;
   right: 200px;
-  // background-color: yellow;
-  // width: 500px;
 }
-.main-proje {
+.descr2 {
+  // margin: 0 auto;
+  z-index: 10;
+  position: relative;
+  margin-left: 10px;
+}
+.img-built2 {
+  opacity: 0.25;
+  background-color: red;
+  position: relative;
+  // right: 0px;
+  // z-index: 10;
+  right: 160px;
+}
+.img-built2 img {
+  width: 250px;
+}
+.main-proje,
+.main-proje2 {
   display: flex;
 }
+.main-proje {
+  margin-top: 100px;
+}
 @media (min-width: 640px) {
+  .img-built2 {
+    // position: relative;
+    // right: 0px;
+    // left: 500px;
+  }
   .descr {
     // bottom: 120px;
     position: relative;
-    right: 100px;
+    right: 90px;
   }
   .main-proje {
-    // left: 100px;
-    // width: 90%;
-    background-color: aqua;
-    margin-right: 20px;
+    // margin-right: 20px;
+    margin-left: 100px;
   }
   .img-built {
     // width: 500px;
     background-color: aqua;
     // left: 20px;
   }
-  .img-built img {
-    width: 700px;
+  .img-built img,
+  .img-built2 img {
+    width: 600px;
     // height: 80%;
   }
   .prr {

@@ -11,6 +11,7 @@ import SocialMedia from '../components/SocialMedia';
 import Email from '../components/Email';
 import StyledCredit from '../components/StyledCredit';
 import Projects from '../components/Projects';
+// import WorkPlace from '../components/WorkPlace';
 // import Example from '../components/example';
 
 const Portfolio = () => {
@@ -27,44 +28,7 @@ const Portfolio = () => {
           <AboutMe />
           <WhereIveWorked />
           <Projects />
-          <h5 className="card-title fs-2 mb-5 text-light text-center margin-top-aboutMe">
-            Other Projects
-          </h5>
-          <div
-            className="container"
-            // style={{ backgroundColor: 'yellow' }}
-          >
-            <div className="row g-3 justify-content-center">
-              <OtherProject
-                title="Integrating Algolia Search with WordPress Multisite"
-                tecnologies={['React', 'Node']}
-              >
-                Building a custom multisite compatible WordPress plugin to build global
-                search with Algolia
-              </OtherProject>
-              <OtherProject
-                title="Integrating Algolia Search with WordPress Multisite"
-                tecnologies={['React', 'Node']}
-              >
-                Building a custom multisite compatible WordPress plugin to build global
-                search with Algolia
-              </OtherProject>
-              <OtherProject
-                title="Integrating Algolia Search with WordPress Multisite"
-                tecnologies={['React', 'Node']}
-              >
-                Building a custom multisite compatible WordPress plugin to build global
-                search with Algolia
-              </OtherProject>
-              <OtherProject
-                title="Integrating Algolia Search with WordPress Multisite"
-                tecnologies={['React', 'Node']}
-              >
-                Building a custom multisite compatible WordPress plugin to build global
-                search with Algolia
-              </OtherProject>
-            </div>
-          </div>
+          <OtherProject />
           <GetInTouch />
         </div>
         <div className="col-md-1 order-3 order-sm-3 order-md-3">

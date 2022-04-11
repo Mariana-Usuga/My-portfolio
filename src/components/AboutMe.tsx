@@ -25,7 +25,7 @@ const AboutMe = () => {
               <ul style={{ listStyleType: 'none' }}>
                 {skillsFront.map((skill) => (
                   <li>
-                    <FaStar className="me-2 fs-0 text-secondary" />
+                    <FaStar className="me-2 text-secondary" />
                     {skill}
                   </li>
                 ))}

@@ -18,11 +18,14 @@ interface Project {
 const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => {
   console.log('working');
   return (
-    <div className={`${title === 'Maket Pul' ? 'main-proje' : null}`}>
+    <div
+    // className={`mt-5 ${title === 'Maket Pul' ? 'main-proje' : 'main-proje2'}`}
+      className="main-proje"
+    >
       {title === 'Maket Pul'
         ? (
           <div
-            className="img-built "
+            className="img-built"
           >
             <img
               src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
@@ -31,7 +34,7 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => {
           </div>
         ) : null}
       <div
-        className="descr"
+        className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}
         // style={{ backgroundColor: 'yellow' }}
       >
         <div
@@ -88,7 +91,7 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => {
       {title === 'U Dance'
         ? (
           <div
-            className="img-built "
+            className="img-built2"
           >
             <img
               src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
