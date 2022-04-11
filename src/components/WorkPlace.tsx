@@ -18,7 +18,7 @@ const WorkPlace: FC<Job> = ({ title, items }) => (
       {items.map((item) => (
         <div className="d-flex">
           <FaStar className="me-2 fs-6 text-secondary" />
-          <li className="mb-2 nose-5 fs-5 text-success">
+          <li className="mb-2 fs-5 text-success">
             {item}
           </li>
         </div>

@@ -15,15 +15,8 @@ $font-sizes: (
   // 5: 18px,
   // 6: 20px,,,
 );
-.nose-5 li::before {
-  content: 'n';
-  display: 'block';
-  position: absolute;
-  color: $secondary;
-}
 
 .img-built {
-  background-color: aqua;
   opacity: 0.25;
 }
 .img-built img {
@@ -40,7 +33,6 @@ $font-sizes: (
 }
 .img-built2 {
   opacity: 0.25;
-  background-color: red;
   position: relative;
   right: 160px;
 }
@@ -61,9 +53,6 @@ $font-sizes: (
   }
   .main-proje {
     margin-left: 100px;
-  }
-  .img-built {
-    background-color: aqua;
   }
   .img-built img,
   .img-built2 img {
