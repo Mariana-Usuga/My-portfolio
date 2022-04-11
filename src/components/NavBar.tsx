@@ -39,7 +39,6 @@ const NavBar: FC = () => {
               ))}
               <li className="nav-item p-4">
                 <button
-                // fw-bold
                   className="btn btn-outline-secondary "
                   type="button"
                 >

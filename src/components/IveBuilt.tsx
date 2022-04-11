@@ -12,97 +12,88 @@ interface Project {
   description?: string
   tecnologies:Array<string>
 }
-// {/* className={title === 'U Dance'
-//  ? 'rounded p-sm-3 prr' : 'rounded p-sm-3 prr  text-sm-end'}
-
-const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => {
-  console.log('working');
-  return (
-    <div
-    // className={`mt-5 ${title === 'Maket Pul' ? 'main-proje' : 'main-proje2'}`}
-      className="main-proje"
-    >
-      {title === 'Maket Pul'
-        ? (
-          <div
-            className="img-built"
-          >
-            <img
-              src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
-              alt=""
-            />
-          </div>
-        ) : null}
-      <div
-        className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}
-        // style={{ backgroundColor: 'yellow' }}
-      >
+const IveBuilt: FC<Project> = ({ title, children, tecnologies }) => (
+  <div
+    className="main-proje"
+  >
+    {title === 'Maket Pul'
+      ? (
         <div
-          className={`${title === 'U Dance' ? null : 'text-sm-end'}`}
-          style={{ width: '90%' }}
+          className="img-built"
         >
-          <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
-            Featured Project
-          </h4>
-          <h5
-            className="fs-3"
-          >
-            {title}
-          </h5>
+          <img
+            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+            alt=""
+          />
         </div>
-        <p
-          className={`rounded p-sm-3 prr ${title === 'U Dance' ? null : 'text-sm-end'}`}
+      ) : null}
+    <div
+      className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}
+    >
+      <div
+        className={`${title === 'U Dance' ? null : 'text-sm-end'}`}
+        style={{ width: '90%' }}
+      >
+        <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
+          Featured Project
+        </h4>
+        <h5
+          className="fs-3"
         >
-          {children}
-        </p>
-        <ul
-          className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
-          style={{
-            listStyleType: 'none',
-            // width: '90%',
-          }}
-        >
-          {tecnologies.map((tecnologie) => (
-            <li
-              className="col-2 me-3 text-font-family-navbar fw-bold"
-              // style={{ backgroundColor: 'pink' }}
-            >
-              {tecnologie}
-            </li>
-          ))}
-        </ul>
-        <ul
-          className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
-          style={{
-            listStyleType: 'none',
-            // width: '90%',
-          }}
-        >
-          <li
-            className="col-2 me-3"
-          >
-            <FaGithub style={{ fontSize: '30px' }} />
-          </li>
-          <li className="col-2 me-3">
-            <FiExternalLink style={{ fontSize: '30px' }} />
-          </li>
-        </ul>
+          {title}
+        </h5>
       </div>
-      {title === 'U Dance'
-        ? (
-          <div
-            className="img-built2"
+      <p
+        className={`rounded p-sm-3 prr ${title === 'U Dance' ? null : 'text-sm-end'}`}
+      >
+        {children}
+      </p>
+      <ul
+        className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
+        style={{
+          listStyleType: 'none',
+          // width: '90%',
+        }}
+      >
+        {tecnologies.map((tecnologie) => (
+          <li
+            className="col-2 me-3 text-font-family-navbar fw-bold"
           >
-            <img
-              src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
-              alt=""
-            />
-          </div>
-        ) : null}
+            {tecnologie}
+          </li>
+        ))}
+      </ul>
+      <ul
+        className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
+        style={{
+          listStyleType: 'none',
+          // width: '90%',
+        }}
+      >
+        <li
+          className="col-2 me-3"
+        >
+          <FaGithub style={{ fontSize: '30px' }} />
+        </li>
+        <li className="col-2 me-3">
+          <FiExternalLink style={{ fontSize: '30px' }} />
+        </li>
+      </ul>
     </div>
+    {title === 'U Dance'
+      ? (
+        <div
+          className="img-built2"
+        >
+          <img
+            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+            alt=""
+          />
+        </div>
+      ) : null}
+  </div>
   // </div>
-  );
-};
+);
 
 export default IveBuilt;
 { /* <div

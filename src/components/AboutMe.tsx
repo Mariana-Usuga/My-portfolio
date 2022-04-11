@@ -1,7 +1,6 @@
 import { FaStar } from 'react-icons/fa';
 
 const AboutMe = () => {
-  console.log('wor');
   const skillsFront = ['JavaScript', 'React', 'Redux'];
   const skillsBack = ['NodeJS', 'Express', 'MongoDB'];
 
@@ -16,8 +15,10 @@ const AboutMe = () => {
         <div className="col-md-8">
           <div className="card-body">
             <p className="card-text fs-5 text-success">
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
+              Hi! My name is Mariana, I&apos;m glad you&apos;re here and I would like
+              to tell you a little about myself. By the year 2020 I begin to study
+              Java, HTML, CSS, JavaScript then by the year 2021 I begin a bootcamp, here
+              I learn React, Redux, NodeJS, MongoDB. I
             </p>
           </div>
           <div className="d-flex text-success">

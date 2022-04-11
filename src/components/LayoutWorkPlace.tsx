@@ -37,14 +37,6 @@ const LayoutWorkPlace = () => {
     to: 'Feb 2022',
   }]);
 
-  // const [jobName, setName] = useState<Job>({
-  //   title: 'Make It Real',
-  //   items: ['This is a wider card with supporting text below as a natural
-  // lead-in to additional content. This content is a little bit longer',
-  //     'This is a wider card with supporting text below as a natural lead-into
-  // additional content. This content is a little bit longer.'],
-  // });
-
   return (
     <div
       className="text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"

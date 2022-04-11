@@ -11,23 +11,20 @@ interface Job {
   to?:string
 }
 
-const WorkPlace: FC<Job> = ({ title, items }) => {
-  console.log('working');
-  return (
-    <div className="card-body" id={title}>
-      <h5 className="card-title fs-2">{title}</h5>
-      <ul style={{ listStyleType: 'none' }}>
-        {items.map((item) => (
-          <div className="d-flex">
-            <FaStar className="me-2 fs-3 text-secondary" />
-            <li className="mb-2 nose-5">
-              {item}
-            </li>
-          </div>
-        ))}
-      </ul>
-    </div>
-  );
-};
+const WorkPlace: FC<Job> = ({ title, items }) => (
+  <div className="card-body" id={title}>
+    <h5 className="card-title fs-2">{title}</h5>
+    <ul style={{ listStyleType: 'none' }}>
+      {items.map((item) => (
+        <div className="d-flex">
+          <FaStar className="me-2 fs-3 text-secondary" />
+          <li className="mb-2 nose-5">
+            {item}
+          </li>
+        </div>
+      ))}
+    </ul>
+  </div>
+);
 
 export default WorkPlace;
