@@ -37,7 +37,7 @@ const OtherProject = () => (
           All this using TypeScript
         </CardProject>
         <CardProject
-          title="Integrating Algolia Search with WordPress Multisite"
+          title="Voting System"
           tecnologies={['React', 'Context']}
           deployment="https://system-voting.netlify.app/"
           repository="https://github.com/Mariana-Usuga/Voting-system"
