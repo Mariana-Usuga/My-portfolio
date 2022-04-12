@@ -9,6 +9,8 @@ interface Project {
   title:string
   description?: string
   tecnologies:Array<string>
+  deployment:string
+  repository:string
 }
 
 const CardProject: FC<Project> = ({ title, children, tecnologies }) => (
@@ -16,7 +18,7 @@ const CardProject: FC<Project> = ({ title, children, tecnologies }) => (
     className="col-4 rounded nose-4"
     style={{ width: '350px' }}
   >
-    <div className="p-4 bg-info text-success rounded-3">
+    <div className="p-4 bg-info text-success rounded-3" style={{ height: '340px' }}>
       <div
         className="row mb-4"
       >
@@ -31,7 +33,7 @@ const CardProject: FC<Project> = ({ title, children, tecnologies }) => (
         </div>
       </div>
       <h5 className="">{title}</h5>
-      <p className="">{children}</p>
+      <p className="fs-5">{children}</p>
       <ul className="d-flex mt-1 mb-0" style={{ listStyleType: 'none' }}>
         {tecnologies.map((tecnologie) => (
           <li className="me-3 text-font-family-navbar fw-bold fs-0">

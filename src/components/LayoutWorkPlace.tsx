@@ -36,7 +36,7 @@ const LayoutWorkPlace = () => {
       id="Experiencie"
     >
       <div className="row g-0">
-        <h5 className="card-title fs-2 mb-4" style={{ marginLeft: '100px' }}>
+        <h5 className="card-title fs-2 mb-5">
           Where I've Worked
         </h5>
         <div className="col-md-4">

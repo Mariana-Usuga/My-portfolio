@@ -8,11 +8,13 @@ const Projects = () => (
     id="Work"
   >
     <div>
-      <h3 className="fs-2 mb-4">Some Things I&apos;ve Built</h3>
+      <h5 className="fs-2 title-thing">
+        Some Things I&apos;ve Built
+      </h5>
     </div>
     <IveBuilt
       title="Maket Pul"
-      tecnologies={['React', 'Redux', 'NodeJS', 'MongoDB']}
+      tecnologies={['React', 'Sass', 'NodeJS', 'MongoDB']}
       deployment="https://marktpulf.netlify.app/"
       repository="https://github.com/Mariana-Usuga/MarktPul-F"
     >
@@ -23,7 +25,7 @@ const Projects = () => (
     </IveBuilt>
     <IveBuilt
       title="U Dance"
-      tecnologies={['React', 'Redux', 'NodeJS', 'MongoDB']}
+      tecnologies={['React', 'TailWind', 'NodeJS', 'MongoDB']}
       deployment="https://u-dance.netlify.app/"
       repository="https://github.com/Mariana-Usuga/U-Dance-F"
     >

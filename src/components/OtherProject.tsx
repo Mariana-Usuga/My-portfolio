@@ -16,32 +16,35 @@ const OtherProject = () => (
     >
       <div className="row g-3 justify-content-center">
         <CardProject
-          title="Integrating Algolia Search with WordPress Multisite"
-          tecnologies={['React', 'Node']}
+          title="Ecommerce_Component"
+          tecnologies={['React', 'Redux', 'Sass']}
+          deployment="https://adoring-easley-2c8944.netlify.app/"
+          repository="https://github.com/Mariana-Usuga/Ecommerce_Component"
         >
-          Building a custom multisite compatible WordPress plugin to build global
-          search with Algolia
+          This is a shopping cart where the user can add the dishes he wants,
+          when he adds a dish to his cart the total is automatically updated,
+          the user can increase or decrease, when there are no dishes in his cart,
+          he should see a message saying: Your cart is empty
+        </CardProject>
+        <CardProject
+          title="Todo list and Bank with TypeScript"
+          tecnologies={['React', 'Bootstrap', 'Typecript']}
+          deployment="https://first-typescript.netlify.app/"
+          repository="https://github.com/Mariana-Usuga/first-steps-typescript"
+        >
+          This is a todo list where the user can add, delete and update,
+          simulating a bank where the user can deposit, withdraw, withdraw all the money.
+          All this using TypeScript
         </CardProject>
         <CardProject
           title="Integrating Algolia Search with WordPress Multisite"
-          tecnologies={['React', 'Node']}
+          tecnologies={['React', 'Context']}
+          deployment="https://system-voting.netlify.app/"
+          repository="https://github.com/Mariana-Usuga/Voting-system"
         >
-          Building a custom multisite compatible WordPress plugin to build global
-          search with Algolia
-        </CardProject>
-        <CardProject
-          title="Integrating Algolia Search with WordPress Multisite"
-          tecnologies={['React', 'Node']}
-        >
-          Building a custom multisite compatible WordPress plugin to build global
-          search with Algolia
-        </CardProject>
-        <CardProject
-          title="Integrating Algolia Search with WordPress Multisite"
-          tecnologies={['React', 'Node']}
-        >
-          Building a custom multisite compatible WordPress plugin to build global
-          search with Algolia
+          This is a voting system in which you can vote for candidate 1, 2, 3 or 4.
+          See voting results in percentage or numerical, see the total votes,
+          This interface is made by creating a context.
         </CardProject>
       </div>
     </div>

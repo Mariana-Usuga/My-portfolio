@@ -52,7 +52,8 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies, deployment, repos
         {children}
       </p>
       <ul
-        className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
+        className={`d-flex me-5
+          ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
         style={{
           listStyleType: 'none',
           // width: '90%',
@@ -60,7 +61,8 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies, deployment, repos
       >
         {tecnologies.map((tecnologie) => (
           <li
-            className="col-2 me-3 text-font-family-navbar fw-bold"
+            // className="col-2 me-3 text-font-family-navbar fw-bold"
+            className="me-3 text-font-family-navbar fw-bold fs-0"
           >
             {tecnologie}
           </li>

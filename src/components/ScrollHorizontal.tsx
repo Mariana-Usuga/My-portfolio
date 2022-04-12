@@ -22,12 +22,10 @@ const ScrollHorizontal: FC<Job> = ({ id, title }) => (
   >
     <div className="nose text-center scrollh">
       <a
-      // btn btn-outline-secondary
         className="nav-link
         border border-success border-start
-         text-light border-0 border-start-4 text-left"
-        style={{ fontSize: '.75rem' }}
-        // style={{ backgroundColor: 'red' }}
+         text-secondary border-0 border-start-4 text-left"
+        style={{ fontSize: '.95rem' }}
         href={`#${title}`}
       >
         {title}
