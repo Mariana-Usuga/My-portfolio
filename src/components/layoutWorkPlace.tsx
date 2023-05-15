@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-prop-types */
 /* eslint-disable import/order */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -6,27 +7,29 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
-import { useState } from 'react';
-import ScrollHorizontal from './ScrollHorizontal';
-import WorkPlace from './WorkPlace';
+import { FC, useState } from 'react';
+import ScrollHorizontal from './scrollHorizontal';
+import WorkPlace from './workPlace';
 import 'alpinejs';
 import { Outlet } from 'react-router-dom';
 
 interface Job {
+  // eslint-disable-next-line react/require-default-props
   id?:number
   title:string
+  // eslint-disable-next-line react/require-default-props
   items?: Array<string>
-  from?:string
-  to?:string
+  from:string
+  to:string
 }
 
-const LayoutWorkPlace = () => {
+const LayoutWorkPlace: FC<Job> = ({ title, from, to }) => {
   // eslint-disable-next-line no-unused-vars
   const [jobChoose, setJobChoose] = useState<Job[]>([{
     id: 1,
-    title: 'Make It Real',
-    from: 'August 2021',
-    to: 'Feb 2022',
+    title,
+    from,
+    to,
   }]);
 
   return (

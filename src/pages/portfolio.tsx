@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
-import NavBar from '../components/NavBar';
-import Main from '../components/Main';
-import AboutMe from '../components/AboutMe';
-import WhereIveWorked from '../components/WhereIveWorked';
-import OtherProject from '../components/OtherProject';
-import GetInTouch from '../components/GetInTouch';
-import SocialMedia from '../components/SocialMedia';
-import Email from '../components/Email';
-import StyledCredit from '../components/StyledCredit';
-import Projects from '../components/Projects';
+import NavBar from '../components/navBar';
+import Main from '../components/main';
+import AboutMe from '../components/aboutMe';
+import WhereIveWorked from '../components/whereIveWorked';
+import OtherProject from '../components/otherProject';
+import GetInTouch from '../components/getInTouch';
+import SocialMedia from '../components/socialMedia';
+import Email from '../components/email';
+import StyledCredit from '../components/styledCredit';
+import Projects from '../components/projects';
 // import WorkPlace from '../components/WorkPlace';
 // import Example from '../components/example';
 

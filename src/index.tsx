@@ -4,7 +4,7 @@ import React from 'react';
 import './styles/style.scss';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Portfolio from './pages/Portfolio';
+import Portfolio from './pages/portfolio';
 
 ReactDOM.render(
   <React.StrictMode>

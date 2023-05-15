@@ -4,7 +4,7 @@
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import CardProject from './CardProject';
+import CardProject from './cardProject';
 
 const OtherProject = () => (
   <>

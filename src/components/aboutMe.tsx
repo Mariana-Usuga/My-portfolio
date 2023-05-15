@@ -1,8 +1,8 @@
 import { FaStar } from 'react-icons/fa';
 
 const AboutMe = () => {
-  const skillsFront = ['JavaScript', 'React', 'Redux'];
-  const skillsBack = ['NodeJS', 'Express', 'MongoDB'];
+  const skillsFront = ['JavaScript', 'React', 'Redux', 'Angular'];
+  const skillsBack = ['NodeJS', 'Express', 'MongoDB', 'NestJs'];
 
   return (
     <div
@@ -10,7 +10,7 @@ const AboutMe = () => {
       style={{ maxWidth: '900px' }}
       id="About"
     >
-      <h5 className="card-title fs-2 ms-4 mb-4">About Me</h5>
+      <h4 className="card-title fs-2 ms-4 mb-4">About Me</h4>
       <div className="row g-0">
         <div className="col-md-8">
           <div className="card-body">
