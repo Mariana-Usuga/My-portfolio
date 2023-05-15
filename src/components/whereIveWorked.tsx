@@ -7,9 +7,39 @@ import WorkPlace from './workPlace';
 const WhereIveWorked = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<LayoutWorkPlace title="Make It Real" from="August 2021" to="Feb 2022" />}>
+      <Route path="/" element={<LayoutWorkPlace />}>
         <Route
-          path="/"
+          path="/sofka"
+          element={(
+            <WorkPlace
+              id={3}
+              title="Sofka"
+              items={[
+                'Worked effectively in teams using the SCRUM methodology',
+                'Provided clean and efficient code using GIT to store their code',
+                'Elaborated  multiple visual elements by translating UI/UX design wireframes into code. Images were uploaded to Cloudinary',
+              ]}
+            />
+)}
+        />
+
+        <Route
+          path="/it"
+          element={(
+            <WorkPlace
+              id={2}
+              title="It Team Corp"
+              items={[
+                'Worked effectively in teams using the SCRUM methodology',
+                'Provided clean and efficient code using GIT to store their code',
+                'Elaborated  multiple visual elements by translating UI/UX design wireframes into code. Images were uploaded to Cloudinary',
+              ]}
+            />
+)}
+        />
+
+        <Route
+          path="/mtr"
           element={(
             <WorkPlace
               id={1}
@@ -22,21 +52,7 @@ const WhereIveWorked = () => (
             />
 )}
         />
-      </Route>
 
-      <Route path="/" element={<LayoutWorkPlace title="It Team Corp" from="August 2021" to="Feb 2022" />}>
-        <Route
-          path="/"
-          element={(
-            <WorkPlace
-              id={1}
-              title="It Team Corp"
-              items={[
-                'Worked effectively in teams using the SCRUM methodology',
-              ]}
-            />
-)}
-        />
       </Route>
 
     </Routes>

@@ -12,11 +12,12 @@ interface Job {
   from?:string
   to?:string
 }
+// to={`${id === 1 ? '/' : 2}`}
 
 const ScrollHorizontal: FC<Job> = ({ id, title }) => (
   <Link
-    to={`${id === 1 ? '/' : 2}`}
-    key="1"
+    to={`/${title}`}
+    key={id}
     style={{ textDecoration: 'none' }}
     data-cy="profile"
   >

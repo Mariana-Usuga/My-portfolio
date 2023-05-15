@@ -23,14 +23,27 @@ interface Job {
   to:string
 }
 
-const LayoutWorkPlace: FC<Job> = ({ title, from, to }) => {
+const LayoutWorkPlace = () => {
   // eslint-disable-next-line no-unused-vars
-  const [jobChoose, setJobChoose] = useState<Job[]>([{
-    id: 1,
-    title,
-    from,
-    to,
-  }]);
+  const [jobChoose, setJobChoose] = useState<Job[]>([
+    {
+      id: 3,
+      title: 'sofka',
+      from: 's',
+      to: 'd',
+    },
+    {
+      id: 2,
+      title: 'it',
+      from: 's',
+      to: 'd',
+    },
+    {
+      id: 1,
+      title: 'mtr',
+      from: 's',
+      to: 'd',
+    }]);
 
   return (
     <div
