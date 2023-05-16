@@ -28,21 +28,21 @@ const LayoutWorkPlace = () => {
   const [jobChoose, setJobChoose] = useState<Job[]>([
     {
       id: 3,
-      title: 'sofka',
-      from: 's',
-      to: 'd',
+      title: 'Sofka Technologies',
+      from: 'January - 2023',
+      to: 'April - 2023',
     },
     {
       id: 2,
-      title: 'it',
-      from: 's',
-      to: 'd',
+      title: 'It Team Corp',
+      from: 'June - 2022',
+      to: 'January -2023',
     },
     {
       id: 1,
-      title: 'mtr',
-      from: 's',
-      to: 'd',
+      title: 'Make It Real',
+      from: 'August - 2021',
+      to: 'February - 2022',
     }]);
 
   return (
