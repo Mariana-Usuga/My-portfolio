@@ -23,8 +23,7 @@ const OtherProject = () => (
         >
           This is a shopping cart where the user can add the dishes he wants,
           when he adds a dish to his cart the total is automatically updated,
-          the user can increase or decrease, when there are no dishes in his cart,
-          he should see a message saying: Your cart is empty
+          the user can increase or decrease.
         </CardProject>
         <CardProject
           title="Todo list and Bank with TypeScript"

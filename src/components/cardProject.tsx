@@ -13,7 +13,7 @@ interface Project {
   repository:string
 }
 
-const CardProject: FC<Project> = ({ title, children, tecnologies }) => (
+const CardProject: FC<Project> = ({ title, children, tecnologies, deployment, repository }) => (
   <div
     className="col-4 rounded nose-4"
     style={{ width: '350px' }}
@@ -26,10 +26,14 @@ const CardProject: FC<Project> = ({ title, children, tecnologies }) => (
           <FaFolder style={{ fontSize: '30px' }} />
         </div>
         <div className="col">
-          <FaGithub style={{ fontSize: '20px' }} />
+          <a href={repository} className="text-success" target="_blank" rel="noreferrer">
+            <FaGithub style={{ fontSize: '20px' }} />
+          </a>
         </div>
         <div className="col">
-          <FiExternalLink style={{ fontSize: '20px' }} />
+          <a href={deployment} className="text-success" target="_blank" rel="noreferrer">
+            <FiExternalLink style={{ fontSize: '20px' }} />
+          </a>
         </div>
       </div>
       <h5 className="">{title}</h5>
