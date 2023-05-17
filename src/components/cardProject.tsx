@@ -12,13 +12,14 @@ interface Project {
   deployment:string
   repository:string
 }
-
+// col-4 rounded nose-4
+// p-4 bg-info text-success rounded-
+// style={{ width: '350px' }}
 const CardProject: FC<Project> = ({ title, children, tecnologies, deployment, repository }) => (
   <div
-    className="col-4 rounded nose-4"
-    style={{ width: '350px' }}
+    className="col-md-4 mb-5"
   >
-    <div className="p-4 bg-info text-success rounded-3" style={{ height: '340px' }}>
+    <div className="text-success bg-info p-4 rounded-3 card h-100" style={{ height: '340px' }}>
       <div
         className="row mb-4"
       >

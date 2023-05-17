@@ -3,6 +3,7 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+// row g-3 justify-content-center
 
 import CardProject from './cardProject';
 
@@ -14,7 +15,7 @@ const OtherProject = () => (
     <div
       className="container"
     >
-      <div className="row g-3 justify-content-center">
+      <div className="row gx-4 gx-lg-5">
         <CardProject
           title="Ecommerce_Component"
           tecnologies={['React', 'Redux', 'Sass']}
