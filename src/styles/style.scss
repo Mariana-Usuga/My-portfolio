@@ -1,5 +1,11 @@
 //overwrite them variables
-
+/*html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}*/
+body{
+  background-color: salmon;
+}
 //quick test
 $primary: rgb(18, 14, 38);
 $secondary: rgb(6, 147, 227);
@@ -167,6 +173,13 @@ $font-sizes: (
   background-position: center top;
   background-repeat: no-repeat;
 }
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 
 // $text-font-family: 'Montserrat', sans-serif;
 @import '../../bootstrap/scss/bootstrap.scss';

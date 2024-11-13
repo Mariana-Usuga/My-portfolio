@@ -5,34 +5,49 @@ import { FaFolder, FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 
 interface Project {
-  id?:number
-  title:string
-  description?: string
-  tecnologies:Array<string>
-  deployment:string
-  repository:string
+  id?: number;
+  title: string;
+  description?: string;
+  tecnologies: Array<string>;
+  deployment: string;
+  repository: string;
 }
 // col-4 rounded nose-4
 // p-4 bg-info text-success rounded-
 // style={{ width: '350px' }}
-const CardProject: FC<Project> = ({ title, children, tecnologies, deployment, repository }) => (
-  <div
-    className="col-md-4 mb-5"
-  >
-    <div className="text-success bg-info p-4 rounded-3 card h-100" style={{ height: '340px' }}>
-      <div
-        className="row mb-4"
-      >
+const CardProject: FC<Project> = ({
+  title,
+  children,
+  tecnologies,
+  deployment,
+  repository,
+}) => (
+  <div className="col-md-4 mb-5">
+    <div
+      className="text-success bg-info p-4 rounded-3 card h-100"
+      style={{ height: '340px' }}
+    >
+      <div className="row mb-4">
         <div className="col-6">
           <FaFolder style={{ fontSize: '30px' }} />
         </div>
         <div className="col">
-          <a href={repository} className="text-success" target="_blank" rel="noreferrer">
+          <a
+            href={repository}
+            className="text-success"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub style={{ fontSize: '20px' }} />
           </a>
         </div>
         <div className="col">
-          <a href={deployment} className="text-success" target="_blank" rel="noreferrer">
+          <a
+            href={deployment}
+            className="text-success"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiExternalLink style={{ fontSize: '20px' }} />
           </a>
         </div>

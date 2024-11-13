@@ -8,31 +8,30 @@ import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 
 interface Project {
-  id?:number
-  title:string
-  description?: string
-  tecnologies:Array<string>
-  repository?:string
-  deployment?:string
+  id?: number;
+  title: string;
+  description?: string;
+  tecnologies: Array<string>;
+  repository?: string;
+  deployment?: string;
 }
-const IveBuilt: FC<Project> = ({ title, children, tecnologies, deployment, repository }) => (
-  <div
-    className="main-proje"
-  >
-    {title === 'Maket Pul'
-      ? (
-        <div
-          className="img-built"
-        >
-          <img
-            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
-            alt=""
-          />
-        </div>
-      ) : null}
-    <div
-      className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}
-    >
+const IveBuilt: FC<Project> = ({
+  title,
+  children,
+  tecnologies,
+  deployment,
+  repository,
+}) => (
+  <div className="main-proje">
+    {title === 'Maket Pul' ? (
+      <div className="img-built">
+        <img
+          src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+          alt=""
+        />
+      </div>
+    ) : null}
+    <div className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}>
       <div
         className={`${title === 'U Dance' ? null : 'text-sm-end'}`}
         style={{ width: '90%' }}
@@ -40,14 +39,12 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies, deployment, repos
         <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
           Featured Project
         </h4>
-        <h5
-          className="fs-3"
-        >
-          {title}
-        </h5>
+        <h5 className="fs-3">{title}</h5>
       </div>
       <p
-        className={`rounded p-sm-3 prr ${title === 'U Dance' ? null : 'text-sm-end'}`}
+        className={`rounded p-sm-3 prr ${
+          title === 'U Dance' ? null : 'text-sm-end'
+        }`}
       >
         {children}
       </p>
@@ -60,52 +57,57 @@ const IveBuilt: FC<Project> = ({ title, children, tecnologies, deployment, repos
         }}
       >
         {tecnologies.map((tecnologie) => (
-          <li
-            // className="col-2 me-3 text-font-family-navbar fw-bold"
-            className="me-3 text-font-family-navbar fw-bold fs-0"
-          >
+          <li className="me-3 text-font-family-navbar fw-bold fs-0">
             {tecnologie}
           </li>
         ))}
       </ul>
       <ul
-        className={`d-flex  ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
+        className={`d-flex  ${
+          title === 'U Dance' ? null : 'justify-content-sm-end'
+        }`}
         style={{
           listStyleType: 'none',
           // width: '90%',
         }}
       >
-        <li
-          className="col-2 me-3"
-        >
-          <a href={repository} target="_blank" style={{ color: 'white' }} rel="noreferrer">
+        <li className="col-2 me-3">
+          <a
+            href={repository}
+            target="_blank"
+            style={{ color: 'white' }}
+            rel="noreferrer"
+          >
             <FaGithub style={{ fontSize: '30px' }} />
           </a>
         </li>
         <li className="col-2 me-3">
-          <a href={deployment} target="_blank" style={{ color: 'white' }} rel="noreferrer">
+          <a
+            href={deployment}
+            target="_blank"
+            style={{ color: 'white' }}
+            rel="noreferrer"
+          >
             <FiExternalLink style={{ fontSize: '30px' }} />
           </a>
         </li>
       </ul>
     </div>
-    {title === 'U Dance'
-      ? (
-        <div
-          className="img-built2"
-        >
-          <img
-            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
-            alt=""
-          />
-        </div>
-      ) : null}
+    {title === 'U Dance' ? (
+      <div className="img-built2">
+        <img
+          src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+          alt=""
+        />
+      </div>
+    ) : null}
   </div>
   // </div>
 );
 
 export default IveBuilt;
-{ /* <div
+{
+  /* <div
       // className="center-aboutMe
       // margin-top-aboutMe bg-primary boder-primary mx-3"
       // id="Work"
@@ -134,7 +136,8 @@ export default IveBuilt;
     //       className="card-body col-md-6 text-left project1"
     //       style={{ color: '#a8b2d1' }}
     //     >
-    //       {/* <div className="project1_background"> */ }
+    //       {/* <div className="project1_background"> */
+}
 //       <p>Featured Project</p>
 //       <h5 className="card-title">Maket Pul</h5>
 //       <p className="card-text">

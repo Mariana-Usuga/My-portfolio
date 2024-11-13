@@ -1,27 +1,70 @@
 import { FaStar } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
+const textVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
+/* const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: '-220%',
+    transition: {
+      repeat: Infinity,
+      repeatType: 'mirror',
+      duration: 20,
+    },
+  },
+}; */
 const AboutMe = () => {
   const skillsFront = ['JavaScript', 'React', 'Redux', 'Angular'];
   const skillsBack = ['NodeJS', 'Express', 'MongoDB', 'NestJs'];
-
   return (
     <div
       className=" text-light center-aboutMe margin-top-aboutMe bg-primary"
       style={{ maxWidth: '900px' }}
       id="About"
     >
-      <h4 className="card-title fs-2 ms-4 mb-4">About Me</h4>
+      <motion.h4
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+        className="card-title fs-2 ms-4 mb-4"
+      >
+        About Me
+      </motion.h4>
       <div className="row g-0">
         <div className="col-md-8">
           <div className="card-body">
             <p className="card-text fs-5 text-success">
-              Hi! My name is Mariana, I&apos;m glad you&apos;re here and I would like
-              to tell you a little about myself. By the year 2020 I begin to study
-              Java, HTML, CSS, JavaScript then by the year 2021 I begin a bootcamp, here
-              I learn React, Redux, NodeJS, MongoDB. I learned from this experience to work
-              effectively in teams using the SCRUM methodology, have provided clean and
-              efficient code using GIT to store their code. I am an intelligent person,
-              with great capacity for teamwork and ready to face great challenges.
+              Hi! My name is Mariana, I&apos;m glad you&apos;re here and I would
+              like to tell you a little about myself. By the year 2020 I begin
+              to study Java, HTML, CSS, JavaScript then by the year 2021 I begin
+              a bootcamp, here I learn React, Redux, NodeJS, MongoDB. I learned
+              from this experience to work effectively in teams using the SCRUM
+              methodology, have provided clean and efficient code using GIT to
+              store their code. I am an intelligent person, with great capacity
+              for teamwork and ready to face great challenges.
             </p>
           </div>
           <div className="d-flex text-success">
@@ -49,9 +92,9 @@ const AboutMe = () => {
         </div>
         <div className="col-md-4">
           <img
-            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648329629/WhatsApp_Image_2022-03-03_at_3.53.49_PM_rnle6c.jpg"
+            src="/foto.png"
             className="img-fluid rounded"
-            style={{ width: '200px' }}
+            style={{ width: '300px' }}
             alt="..."
           />
         </div>
@@ -59,5 +102,4 @@ const AboutMe = () => {
     </div>
   );
 };
-
 export default AboutMe;

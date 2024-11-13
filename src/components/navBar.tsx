@@ -10,22 +10,28 @@ const NavBar: FC = () => {
   return (
     <nav className="navbar navbar-expand-lg pt-4 ps-3">
       <div className="container-fluid">
-        <a className="navbar-brand text-light text-font-family-navbar" href="#">Mariana</a>
-        <button type="button" className="hideBars bg-primary text-secondary border-0">
-          {!isOpen ? (
-            <FaAlignRight style={{ fontSize: '35px' }} onClick={() => setOpen(true)} />
-          ) : (
-            <FaTimes style={{ fontSize: '30px' }} onClick={() => setOpen(false)} />
-          ) }
-        </button>
-        <div
-          className={!isOpen ? 'offcanvas offcanvas-end hide'
-            : 'show'}
+        <a className="navbar-brand text-light text-font-family-navbar" href="#">
+          Mariana
+        </a>
+        <button
+          type="button"
+          className="hideBars bg-primary text-secondary border-0"
         >
+          {!isOpen ? (
+            <FaAlignRight
+              style={{ fontSize: '35px' }}
+              onClick={() => setOpen(true)}
+            />
+          ) : (
+            <FaTimes
+              style={{ fontSize: '30px' }}
+              onClick={() => setOpen(false)}
+            />
+          )}
+        </button>
+        <div className={!isOpen ? 'offcanvas offcanvas-end hide' : 'show'}>
           <div className="text-font-family-navbar text-center bg-primary offcanvas-body">
-            <ul
-              className="navbar-nav justify-content-end flex-grow-1 pe-3 text-light"
-            >
+            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 text-light">
               {items.map((item) => (
                 <li className="nav-item p-4">
                   <a
@@ -38,10 +44,7 @@ const NavBar: FC = () => {
                 </li>
               ))}
               <li className="nav-item p-4">
-                <button
-                  className="btn btn-outline-secondary "
-                  type="button"
-                >
+                <button className="btn btn-outline-secondary " type="button">
                   <a
                     href="file:///C:/Users/Mariana/Downloads/Mariana%20Usuga%20(12).pdf"
                     target="_blank"

@@ -1,0 +1,60 @@
+@import "../styles/style.scss";
+
+.parallax {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  h1 {
+    font-size: 80px;
+
+  
+  }
+
+  .mountains {
+    background-image: url("../../public/mountains.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    /*@include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }*/
+  }
+  
+  .planets {
+    background-image: url("../../public/planets.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    /*@include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }*/
+  }
+  .stars {
+    background-image: url("../../public/stars.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    /*@include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }*/
+  }
+  
+
+}

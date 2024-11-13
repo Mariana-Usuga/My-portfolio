@@ -3,9 +3,7 @@ import { GoMarkGithub } from 'react-icons/go';
 
 const SocialMedia = () => (
   <div className="text-success">
-    <ul
-      className="d-flex nose-3"
-    >
+    <ul className="d-flex nose-3">
       <li className="align-items-end me-4 link">
         <a
           href="https://www.linkedin.com/in/mariana-usuga/"
@@ -13,9 +11,7 @@ const SocialMedia = () => (
           className="text-success"
           rel="noreferrer"
         >
-          <FaLinkedinIn
-            style={{ fontSize: '25px' }}
-          />
+          <FaLinkedinIn style={{ fontSize: '25px' }} />
         </a>
       </li>
       <li className="align-items-end me-4 link">
