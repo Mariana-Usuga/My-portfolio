@@ -15,12 +15,12 @@ import { Outlet } from 'react-router-dom';
 
 interface Job {
   // eslint-disable-next-line react/require-default-props
-  id?:number
-  title:string
+  id?: number;
+  title: string;
   // eslint-disable-next-line react/require-default-props
-  items?: Array<string>
-  from:string
-  to:string
+  items?: Array<string>;
+  from: string;
+  to: string;
 }
 
 const LayoutWorkPlace = () => {
@@ -43,30 +43,24 @@ const LayoutWorkPlace = () => {
       title: 'Make It Real',
       from: 'August - 2021',
       to: 'February - 2022',
-    }]);
+    },
+  ]);
 
   return (
     <div
-      className="text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary"
-      style={{ maxWidth: '900px' }}
+      className="text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary d-flex align-items-center"
+      style={{ maxWidth: '900px', marginTop: '100px' }}
       id="Experiencie"
     >
-      <div className="row g-0">
-        <h5 className="card-title fs-2 mb-5">
-          Where I've Worked
-        </h5>
-        <div className="col-md-4">
-          <div className="items text-success d-md-block">
-            {jobChoose.map((job) => (
-              <div>
-                <ScrollHorizontal id={job.id} title={job.title} />
-              </div>
-            ))}
+      <div className="items text-success d-md-block col-md-4 row overflow-hidden">
+        {jobChoose.map((job) => (
+          <div>
+            <ScrollHorizontal id={job.id} title={job.title} />
           </div>
-        </div>
-        <div className="col-md-8">
-          <Outlet />
-        </div>
+        ))}
+      </div>
+      <div className="col-md-8">
+        <Outlet />
       </div>
     </div>
   );

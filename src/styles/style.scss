@@ -78,7 +78,8 @@ $font-sizes: (
 }
 
 .text-font-family-navbar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
 }
 
 .text-font-family-main {
@@ -172,6 +173,11 @@ $font-sizes: (
     url('https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png');
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+.fontF{
+  letter-spacing: 0.4px;
+  font-family: 'Preahvihear', sans-serif;
 }
 
 @mixin mobile {

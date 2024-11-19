@@ -3,9 +3,10 @@
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { FC } from 'react';
+import { FC, useRef } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface Project {
   id?: number;
@@ -21,89 +22,102 @@ const IveBuilt: FC<Project> = ({
   tecnologies,
   deployment,
   repository,
-}) => (
-  <div className="main-proje">
-    {title === 'Maket Pul' ? (
-      <div className="img-built">
-        <img
-          src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
-          alt=""
-        />
-      </div>
-    ) : null}
-    <div className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}>
-      <div
-        className={`${title === 'U Dance' ? null : 'text-sm-end'}`}
-        style={{ width: '90%' }}
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+
+  return (
+    <div className="main-proje" ref={ref}>
+      {title === 'Maket Pul' ? (
+        <div className="img-built">
+          <img
+            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+            alt=""
+          />
+        </div>
+      ) : null}
+      <motion.div
+        className={`${title === 'Maket Pul' ? 'descr' : 'descr2'}`}
+        style={{ y }}
       >
-        <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
-          Featured Project
-        </h4>
-        <h5 className="fs-3">{title}</h5>
-      </div>
-      <p
-        className={`rounded p-sm-3 prr ${
-          title === 'U Dance' ? null : 'text-sm-end'
-        }`}
-      >
-        {children}
-      </p>
-      <ul
-        className={`d-flex me-5
+        <div
+          className={`${title === 'U Dance' ? null : 'text-sm-end'}`}
+          style={{ width: '90%' }}
+        >
+          <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
+            Featured Project
+          </h4>
+          <h5 className="fs-3">{title}</h5>
+        </div>
+        <p
+          className={`rounded p-sm-3 prr ${
+            title === 'U Dance' ? null : 'text-sm-end'
+          }`}
+        >
+          {children}
+        </p>
+        <ul
+          className={`d-flex me-5
           ${title === 'U Dance' ? null : 'justify-content-sm-end'}`}
-        style={{
-          listStyleType: 'none',
-          // width: '90%',
-        }}
-      >
-        {tecnologies.map((tecnologie) => (
-          <li className="me-3 text-font-family-navbar fw-bold fs-0">
-            {tecnologie}
+          style={{
+            listStyleType: 'none',
+            // width: '90%',
+          }}
+        >
+          {tecnologies.map((tecnologie) => (
+            <li className="me-3 text-font-family-navbar fw-bold fs-0">
+              {tecnologie}
+            </li>
+          ))}
+        </ul>
+        <ul
+          className={`d-flex  ${
+            title === 'U Dance' ? null : 'justify-content-sm-end'
+          }`}
+          style={{
+            listStyleType: 'none',
+            // width: '90%',
+          }}
+        >
+          <li className="col-2 me-3">
+            <a
+              href={repository}
+              target="_blank"
+              style={{ color: 'white' }}
+              rel="noreferrer"
+            >
+              <FaGithub style={{ fontSize: '30px' }} />
+            </a>
           </li>
-        ))}
-      </ul>
-      <ul
-        className={`d-flex  ${
-          title === 'U Dance' ? null : 'justify-content-sm-end'
-        }`}
-        style={{
-          listStyleType: 'none',
-          // width: '90%',
-        }}
-      >
-        <li className="col-2 me-3">
-          <a
-            href={repository}
-            target="_blank"
-            style={{ color: 'white' }}
-            rel="noreferrer"
-          >
-            <FaGithub style={{ fontSize: '30px' }} />
-          </a>
-        </li>
-        <li className="col-2 me-3">
-          <a
-            href={deployment}
-            target="_blank"
-            style={{ color: 'white' }}
-            rel="noreferrer"
-          >
-            <FiExternalLink style={{ fontSize: '30px' }} />
-          </a>
-        </li>
-      </ul>
+          <li className="col-2 me-3">
+            <a
+              href={deployment}
+              target="_blank"
+              style={{ color: 'white' }}
+              rel="noreferrer"
+            >
+              <FiExternalLink style={{ fontSize: '30px' }} />
+            </a>
+          </li>
+        </ul>
+      </motion.div>
+      {title === 'U Dance' ? (
+        <div className="img-built2">
+          <img
+            src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
+            alt=""
+          />
+        </div>
+      ) : null}
     </div>
-    {title === 'U Dance' ? (
-      <div className="img-built2">
-        <img
-          src="https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png"
-          alt=""
-        />
-      </div>
-    ) : null}
-  </div>
-  // </div>
-);
+    // </div>
+  );
+};
 
 export default IveBuilt;
 {

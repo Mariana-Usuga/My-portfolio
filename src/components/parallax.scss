@@ -16,11 +16,11 @@
   }
 
   .mountains {
-    background-image: url("../../public/mountains.png");
+    background-image: url("../../public/mountains14.png");
     background-size: cover;
     background-position: bottom;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     z-index: 3;
     /*@include mobile {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
 .nose-5 li::before {
   content: 'n';
   display: 'block';
@@ -46,6 +48,8 @@
 .main-proje {
   margin-top: 100px;
 }
+
+
 
 @media (min-width: 640px) {
   .descr {

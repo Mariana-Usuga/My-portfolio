@@ -4,23 +4,31 @@ import { FC } from 'react';
 import { FaStar } from 'react-icons/fa';
 
 interface Job {
-  id?:number
-  title:string
-  items: Array<string>
-  from?:string
-  to?:string
+  id?: number;
+  title: string;
+  items: Array<string>;
+  from?: string;
+  to?: string;
 }
 
 const WorkPlace: FC<Job> = ({ title, items }) => (
-  <div className="card-body" id={title}>
-    <h5 className="card-title fs-2">{title}</h5>
+  <div
+    className="card-body"
+    id={title}
+    style={{
+      fontFamily: 'Preahvihear',
+    }}
+  >
+    <h5 className="card-title" style={{ fontSize: '40px' }}>
+      {title}
+    </h5>
     <ul style={{ listStyleType: 'none' }}>
       {items.map((item) => (
         <div className="d-flex">
           <FaStar className="me-2 fs-5 text-secondary" />
-          <li className="mb-2 fs-5 text-success">
+          <div className="mb-2  text-success" style={{ fontSize: '22px' }}>
             {item}
-          </li>
+          </div>
         </div>
       ))}
     </ul>

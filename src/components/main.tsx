@@ -24,44 +24,73 @@ const textVariants = {
   },
 };
 const Main = () => (
-  <div className="text-light mx-md-5 mx-4">
-    <motion.h2
-      variants={textVariants}
-      initial="initial"
-      animate="animate"
-      className="card-title text-light fs-1 fw-bold"
-      style={{ fontFamily: 'Playfair Display', fontSize: '1px' }}
-    >
-      Mariana Usuga.
-    </motion.h2>
-    <motion.p
-      variants={textVariants}
-      initial="initial"
-      animate="animate"
-      className="fs-5 text-success text-success text-font-family-main"
-      style={{ maxWidth: '540px' }}
-    >
-      React and NodeJS developer building excellent user experiences with the
-      MERN stack. I bring well-tested and clean code to the companies and have
-      worked effectively with distributed/remote teams.
-    </motion.p>
-    <div>
-      <motion.button
+  <div className="row justify-content-center" style={{ marginTop: '80px' }}>
+    <div className="text-light mx-md-5 mx-4 col-md-5">
+      <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="btn btn-outline-secondary mx-5"
-        type="button"
+        className="fontF"
       >
-        <a
-          href="mailto:marianausugamontoya12344@gmail.com"
-          className=" text-success"
-          target="_blank"
-          rel="noreferrer"
+        Full Stack Developer
+      </motion.div>
+      <motion.h2
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+        className="card-title text-light fw-bold"
+        style={{ fontFamily: 'Preahvihear', fontSize: '50px' }}
+      >
+        Hello, my name is Mariana Usuga
+      </motion.h2>
+      <motion.p
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+        className=" text-success text-success"
+        style={{
+          fontFamily: 'Preahvihear',
+          maxWidth: '540px',
+          fontSize: '22px',
+        }}
+      >
+        React and NodeJS developer building excellent user experiences with the
+        MERN stack. I bring well-tested and clean code to the companies and have
+        worked effectively with distributed/remote teams.
+      </motion.p>
+      <div>
+        <motion.button
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+          className="btn btn-outline-secondary"
+          type="button"
+          style={{
+            fontFamily: 'Preahvihear',
+            fontSize: '22px',
+          }}
         >
-          Get In Touch
-        </a>
-      </motion.button>
+          <a
+            href="mailto:marianausugamontoya12344@gmail.com"
+            className=" text-success"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkedin
+          </a>
+        </motion.button>
+      </div>
+    </div>
+    <div className="col-md-4 ">
+      <img
+        src="/foto.png"
+        className="img-fluid rounded "
+        style={{
+          width: '340px',
+          top: '-60px',
+        }}
+        alt="..."
+      />
     </div>
   </div>
 );

@@ -6,13 +6,12 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Job {
-  id?:number
-  title:string
-  items?: Array<string>
-  from?:string
-  to?:string
+  id?: number;
+  title: string;
+  items?: Array<string>;
+  from?: string;
+  to?: string;
 }
-// `/${id === 1 ? }` to={`${id === 1 ? '/' : 2}`}
 
 const ScrollHorizontal: FC<Job> = ({ id, title }) => (
   <Link
@@ -26,7 +25,7 @@ const ScrollHorizontal: FC<Job> = ({ id, title }) => (
         className="nav-link
         border border-success border-start
          text-secondary border-0 border-start-4 text-left"
-        style={{ fontSize: '.95rem' }}
+        style={{ fontSize: '22px' }}
         href={`#${title}`}
       >
         {title}

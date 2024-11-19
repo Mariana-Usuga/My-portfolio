@@ -30,8 +30,8 @@ const NavBar: FC = () => {
           )}
         </button>
         <div className={!isOpen ? 'offcanvas offcanvas-end hide' : 'show'}>
-          <div className="text-font-family-navbar text-center bg-primary offcanvas-body">
-            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 text-light">
+          <div className="text-font-family-navbar  text-center bg-primary offcanvas-body">
+            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 text-light fw-semibold">
               {items.map((item) => (
                 <li className="nav-item p-4">
                   <a
