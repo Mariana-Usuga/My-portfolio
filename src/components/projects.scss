@@ -15,67 +15,29 @@
   height: 10px;
   background-color: white;
 }
-
 .container {
-  //display: flex;
-  /*align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;*/
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
-
+.blur-container {
+  background: url('../../public/Rectangle.png'),
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(118, 60, 172, 0.2) 0%,
+      rgba(110, 191, 244, 0.0447917) 77.08%,
+      rgba(70, 144, 213, 0) 100%
+    );
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
+  border-radius: 14px;
+}
 img {
-  flex: 1;
-  height: 80vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-}
-.textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-h2 {
-  font-size: 72px;
-}
-.wrapper {
-  max-width: 1366px;
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
 }
 
 .imageContainer {
-  flex: 1;
   height: 50%;
-}
-
-.textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
-  h2 {
-    font-size: 72px;
-  }
-
-  p {
-    color: gray;
-    font-size: 20px;
-  }
-
-  button {
-    background-color: orange;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 200px;
-    cursor: pointer;
-  }
 }

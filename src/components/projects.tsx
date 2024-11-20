@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import './projects.scss';
 import { useRef } from 'react';
 
@@ -8,25 +8,25 @@ const items = [
   {
     id: 1,
     title: 'React Commerce',
-    img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
+    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
   },
   {
     id: 2,
     title: 'Next.js Blog',
-    img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
+    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
   },
   {
     id: 3,
     title: 'Vanilla JS App',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
+    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
   },
   {
     id: 4,
     title: 'Music App',
-    img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
   },
 ];
@@ -35,32 +35,58 @@ const Single = ({
   item,
 }: {
   item: { id: number; title: string; img: string; desc: string };
-}) => {
-  const ref = useRef<HTMLDivElement>(null);
+}) => (
+  /* const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]); */
 
-  return (
-    <div className="main-proje" ref={ref}>
-      <div className="img-built">
-        <img src={item.img} alt="" />
+  <div
+    className="row justify-content-center"
+    style={{ marginTop: '100px', width: '100%', position: 'relative' }}
+  >
+    <motion.div className="col-md-5 opacity-25">
+      <img src={item.img} alt="" />
+    </motion.div>
+    <motion.div className="col-md-5">
+      <div className="" style={{ width: '90%', color: 'white' }}>
+        <h4
+          className=" btn-outline-secondary "
+          style={{
+            fontSize: '16px',
+            fontWeight: 'semibold',
+          }}
+        >
+          Featured Project
+        </h4>
+        <h5
+          className="align-right"
+          style={{
+            fontSize: '34px',
+            fontWeight: 'semibold',
+          }}
+        >
+          {item.title}
+        </h5>
       </div>
-
-      <motion.div className="" style={{ y }}>
-        <div className="" style={{ width: '90%' }}>
-          <h4 className="fs-6 text-font-family-navbar btn-outline-secondary fw-bold">
-            Featured Project
-          </h4>
-          <h5 className="fs-3">{item.title}</h5>
-        </div>
-        <p className="">{item.desc}</p>
-      </motion.div>
-    </div>
-    /* <section ref={ref}>
+      <div
+        className="opacity-100 opacity-25 p-3 blur-container"
+        style={{
+          color: 'white',
+          fontSize: '18px',
+          position: 'absolute',
+          right: '150px',
+          width: '44%',
+        }}
+      >
+        {item.desc}
+      </div>
+    </motion.div>
+  </div>
+  /* <section ref={ref}>
       <div className="container">
         <div className="imageContainer">
           <img src={item.img} alt="" />
@@ -72,8 +98,7 @@ const Single = ({
         </motion.div>
       </div>
     </section> */
-  );
-};
+);
 const Projects = () => {
   const ref = useRef<HTMLDivElement>(null);
 
