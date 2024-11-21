@@ -19,10 +19,6 @@ const Parallax = ({ type }: { type: string }) => {
       ref={ref}
       style={{
         marginTop: '100px',
-        background:
-          type === 'services'
-            ? 'linear-gradient(180deg, #111132, #0c0c1d)'
-            : 'linear-gradient(180deg, #111132, #505064)',
       }}
     >
       <motion.h1

@@ -26,7 +26,7 @@ const WorkPlace: FC<Job> = ({ title, items }) => (
       {items.map((item) => (
         <div className="d-flex">
           <FaStar className="me-2 fs-5 text-secondary" />
-          <div className="mb-2  text-success" style={{ fontSize: '22px' }}>
+          <div className="mb-2  text-success" style={{ fontSize: '18px' }}>
             {item}
           </div>
         </div>

@@ -8,7 +8,7 @@
   left: 0;
   padding-top: 50px;
   text-align: center;
-  color: orange;
+  color: white;
   font-size: 36px;
 }
 .progressBar {
@@ -40,4 +40,13 @@ img {
 
 .imageContainer {
   height: 50%;
+}
+
+.card-absolute {
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .card-absolute {
+    position: static;
+  }
 }

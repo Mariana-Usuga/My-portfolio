@@ -24,7 +24,10 @@ const textVariants = {
   },
 };
 const Main = () => (
-  <div className="row justify-content-center" style={{ marginTop: '80px' }}>
+  <div
+    className="row justify-content-center"
+    style={{ marginTop: '80px', fontSize: '18px' }}
+  >
     <div className="text-light mx-md-5 mx-4 col-md-5">
       <motion.div
         variants={textVariants}
@@ -39,7 +42,7 @@ const Main = () => (
         initial="initial"
         animate="animate"
         className="card-title text-light fw-bold"
-        style={{ fontFamily: 'Preahvihear', fontSize: '50px' }}
+        style={{ fontFamily: 'Preahvihear', fontSize: '64px' }}
       >
         Hello, my name is Mariana Usuga
       </motion.h2>
@@ -51,7 +54,7 @@ const Main = () => (
         style={{
           fontFamily: 'Preahvihear',
           maxWidth: '540px',
-          fontSize: '22px',
+          fontSize: '18px',
         }}
       >
         React and NodeJS developer building excellent user experiences with the

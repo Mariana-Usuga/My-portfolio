@@ -1,40 +1,55 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import { motion, useScroll, useSpring } from 'framer-motion';
 import './projects.scss';
 import { useRef } from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { IoOpenSharp } from 'react-icons/io5';
 
 const items = [
   {
     id: 1,
     title: 'React Commerce',
     img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    desc: `A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio
+    information about each track. Create and save new playlists of
+    recommended tracks based on your existing playlists and more`,
+    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
   },
   {
     id: 2,
     title: 'Next.js Blog',
     img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
   },
   {
     id: 3,
     title: 'Vanilla JS App',
     img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
   },
   {
     id: 4,
     title: 'Music App',
     img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
   },
 ];
 
 const Single = ({
   item,
 }: {
-  item: { id: number; title: string; img: string; desc: string };
+  item: {
+    id: number;
+    title: string;
+    img: string;
+    desc: string;
+    tecs: Array<string>;
+  };
 }) => (
   /* const ref = useRef<HTMLDivElement>(null);
 
@@ -43,36 +58,114 @@ const Single = ({
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]); */
+  <div className="container">
+    <div
+      className="row justify-content-center"
+      style={{ marginTop: '150px', width: '100%', position: 'relative' }}
+    >
+      <motion.div
+        className={`opacity-25 col-md-5 opacity-50 ${
+          item.id % 2 === 0 ? 'order-md-2' : 'order-md-1'
+        } `}
+      >
+        <img src={item.img} alt="" />
+      </motion.div>
+      <motion.div
+        className={`col-md-6 card-absolute  ${
+          item.id % 2 === 0 ? 'order-md-1 ' : 'order-md-2 '
+        }`}
+      >
+        <div
+          className="card-body position-relative"
+          style={{ [item.id % 2 === 0 ? 'left' : 'right']: '90px' }}
+        >
+          <div
+            className=""
+            style={{
+              color: 'white',
+            }}
+          >
+            <div
+              style={{
+                fontSize: '16px',
+                fontWeight: 'semibold',
+                fontFamily: 'Poppins',
+                textAlign: item.id % 2 === 0 ? 'left' : 'right',
+              }}
+            >
+              Featured Project
+            </div>
+            <div
+              style={{
+                fontSize: '34px',
+                fontWeight: 'semibold',
+                fontFamily: 'Poppins',
+                textAlign: item.id % 2 === 0 ? 'left' : 'right',
+              }}
+            >
+              {item.title}
+            </div>
+          </div>
+          <div
+            className="opacity-100 opacity-25 p-3 blur-container "
+            style={{
+              color: 'white',
+              fontSize: '18px',
+              fontFamily: 'Poppins',
+            }}
+          >
+            {item.desc}
+          </div>
+          <div
+            className={`row mt-3  ${
+              item.id % 2 === 0
+                ? 'justify-content-start'
+                : 'justify-content-end'
+            }`}
+          >
+            {item.tecs.map((tec) => (
+              <div
+                className="col-2"
+                style={{
+                  color: 'white',
+                  fontFamily: 'Poppins',
+                  fontSize: '18px',
+                }}
+              >
+                {tec}
+              </div>
+            ))}
+          </div>
+          <div
+            className={`row mt-3  ${
+              item.id % 2 === 0
+                ? 'justify-content-start'
+                : 'justify-content-end'
+            }`}
+          >
+            <FaGithub
+              className="col-2"
+              style={{
+                fontSize: '30px',
+                color: 'white',
+              }}
+            />
 
-  <div
-    className="row justify-content-center"
-    style={{ marginTop: '100px', width: '100%', position: 'relative' }}
-  >
-    <motion.div className="col-md-5 opacity-25">
-      <img src={item.img} alt="" />
-    </motion.div>
-    <motion.div className="col-md-5">
-      <div className="" style={{ width: '90%', color: 'white' }}>
-        <h4
-          className=" btn-outline-secondary "
-          style={{
-            fontSize: '16px',
-            fontWeight: 'semibold',
-          }}
-        >
-          Featured Project
-        </h4>
-        <h5
-          className="align-right"
-          style={{
-            fontSize: '34px',
-            fontWeight: 'semibold',
-          }}
-        >
-          {item.title}
-        </h5>
-      </div>
-      <div
+            <IoOpenSharp
+              className="col-2"
+              style={{
+                fontSize: '30px',
+                color: 'white',
+              }}
+            />
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+
+  /*
+    <div
         className="opacity-100 opacity-25 p-3 blur-container"
         style={{
           color: 'white',
@@ -84,9 +177,7 @@ const Single = ({
       >
         {item.desc}
       </div>
-    </motion.div>
-  </div>
-  /* <section ref={ref}>
+  <section ref={ref}>
       <div className="container">
         <div className="imageContainer">
           <img src={item.img} alt="" />
@@ -114,7 +205,7 @@ const Projects = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progres">
-        <h1>Featured Works</h1>
+        <h1>Where Ive Worked</h1>
         <motion.div style={{ scaleX }} className="progressBar" />
       </div>
       {items.map((item) => (

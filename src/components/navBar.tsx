@@ -13,10 +13,7 @@ const NavBar: FC = () => {
         <a className="navbar-brand text-light text-font-family-navbar" href="#">
           Mariana
         </a>
-        <button
-          type="button"
-          className="hideBars bg-primary text-secondary border-0"
-        >
+        <button type="button" className="hideBars text-secondary border-0">
           {!isOpen ? (
             <FaAlignRight
               style={{ fontSize: '35px' }}
@@ -30,7 +27,7 @@ const NavBar: FC = () => {
           )}
         </button>
         <div className={!isOpen ? 'offcanvas offcanvas-end hide' : 'show'}>
-          <div className="text-font-family-navbar  text-center bg-primary offcanvas-body">
+          <div className="text-font-family-navbar  text-center offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 text-light fw-semibold">
               {items.map((item) => (
                 <li className="nav-item p-4">

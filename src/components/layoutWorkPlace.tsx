@@ -48,7 +48,7 @@ const LayoutWorkPlace = () => {
 
   return (
     <div
-      className="text-light center-aboutMe margin-top-aboutMe bg-primary boder-primary d-flex align-items-center"
+      className="text-light center-aboutMe margin-top-aboutMe boder-primary d-flex align-items-center"
       style={{ maxWidth: '900px', marginTop: '100px' }}
       id="Experiencie"
     >

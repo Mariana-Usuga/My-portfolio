@@ -40,7 +40,7 @@ const AboutMe = () => (
   // const skillsBack = ['NodeJS', 'Express', 'MongoDB', 'NestJs'];
   <div
     style={{ marginTop: '100px' }}
-    className="row justify-content-center text-light bg-primary"
+    className="row justify-content-center text-light "
     id="About"
   >
     <div className="col-md-9">
@@ -51,7 +51,7 @@ const AboutMe = () => (
         className="card-title"
         style={{
           fontFamily: 'Preahvihear',
-          fontSize: '40px',
+          fontSize: '69px',
           marginBottom: '50px',
         }}
       >
@@ -60,7 +60,7 @@ const AboutMe = () => (
       <div className="">
         <p
           className=" text-success"
-          style={{ fontFamily: 'Preahvihear', fontSize: '22px' }}
+          style={{ fontFamily: 'Preahvihear', fontSize: '18px' }}
         >
           Hi! My name is Mariana, I&apos;m glad you&apos;re here and I would
           like to tell you a little about myself. By the year 2020 I begin to
