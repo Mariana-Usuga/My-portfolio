@@ -48,8 +48,8 @@ const LayoutWorkPlace = () => {
 
   return (
     <div
-      className="text-light center-aboutMe margin-top-aboutMe boder-primary d-flex align-items-center"
-      style={{ maxWidth: '900px', marginTop: '100px' }}
+      className="text-light center-aboutMe boder-primary d-flex align-items-center"
+      style={{ maxWidth: '900px', marginTop: '15%', marginBottom: '15%' }}
       id="Experiencie"
     >
       <div className="items text-success d-md-block col-md-4 row overflow-hidden">
