@@ -9,12 +9,13 @@ import CardProject from './cardProject';
 
 const OtherProject = () => (
   <>
-    <h5 className="card-title fs-2 mb-5 text-light text-center margin-top-aboutMe">
-      Other Projects
-    </h5>
     <div
-      className="container"
+      className="card-title mb-5 text-light text-center margin-top-aboutMe"
+      style={{ fontSize: '34px', fontFamily: 'Preahvihear' }}
     >
+      Other Projects
+    </div>
+    <div className="container" style={{ fontFamily: 'Preahvihear' }}>
       <div className="row gx-4 gx-lg-5">
         <CardProject
           title="Ecommerce_Component"
@@ -33,8 +34,8 @@ const OtherProject = () => (
           repository="https://github.com/Mariana-Usuga/first-steps-typescript"
         >
           This is a todo list where the user can add, delete and update,
-          simulating a bank where the user can deposit, withdraw, withdraw all the money.
-          All this using TypeScript
+          simulating a bank where the user can deposit, withdraw, withdraw all
+          the money. All this using TypeScript
         </CardProject>
         <CardProject
           title="Voting System"
@@ -42,8 +43,8 @@ const OtherProject = () => (
           deployment="https://system-voting.netlify.app/"
           repository="https://github.com/Mariana-Usuga/Voting-system"
         >
-          This is a voting system in which you can vote for candidate 1, 2, 3 or 4.
-          See voting results in percentage or numerical, see the total votes,
+          This is a voting system in which you can vote for candidate 1, 2, 3 or
+          4. See voting results in percentage or numerical, see the total votes,
           This interface is made by creating a context.
         </CardProject>
       </div>

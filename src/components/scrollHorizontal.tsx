@@ -15,12 +15,15 @@ interface Job {
 
 const ScrollHorizontal: FC<Job> = ({ id, title }) => (
   <Link
-    to={`/${id !== 3 ? id : ''}`}
+    to={`/${id !== 4 ? id : ''}`}
     key={id}
     style={{ textDecoration: 'none' }}
     data-cy="profile"
   >
-    <div className="nose text-center scrollh">
+    <div
+      className="nose text-center scrollh"
+      style={{ fontFamily: 'Preahvihear' }}
+    >
       <a
         className="nav-link
         border border-success border-start

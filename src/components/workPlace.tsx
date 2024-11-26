@@ -19,7 +19,7 @@ const WorkPlace: FC<Job> = ({ title, items }) => (
       fontFamily: 'Preahvihear',
     }}
   >
-    <h5 className="card-title" style={{ fontSize: '40px' }}>
+    <h5 className="card-title" style={{ fontSize: '34px' }}>
       {title}
     </h5>
     <ul style={{ listStyleType: 'none' }}>

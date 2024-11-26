@@ -24,20 +24,18 @@ const textVariants = {
   },
 };
 const Main = () => (
-  <div
-    className="row justify-content-center"
-    style={{ marginTop: '80px', fontSize: '18px' }}
-  >
+  <div className="row justify-content-center" style={{ marginTop: '80px' }}>
     <div className="text-light mx-md-5 mx-4 col-md-5">
       <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
         className="fontF"
+        style={{ fontFamily: 'Preahvihear', fontSize: '18px' }}
       >
         Full Stack Developer
       </motion.div>
-      <motion.h2
+      <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
@@ -45,8 +43,8 @@ const Main = () => (
         style={{ fontFamily: 'Preahvihear', fontSize: '64px' }}
       >
         Hello, my name is Mariana Usuga
-      </motion.h2>
-      <motion.p
+      </motion.div>
+      <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
@@ -60,17 +58,17 @@ const Main = () => (
         React and NodeJS developer building excellent user experiences with the
         MERN stack. I bring well-tested and clean code to the companies and have
         worked effectively with distributed/remote teams.
-      </motion.p>
+      </motion.div>
       <div>
         <motion.button
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="btn btn-outline-secondary"
+          className="btn btn-outline-secondary mt-2"
           type="button"
           style={{
             fontFamily: 'Preahvihear',
-            fontSize: '22px',
+            fontSize: '18px',
           }}
         >
           <a

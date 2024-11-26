@@ -92,7 +92,6 @@ const Single = ({
                 style={{
                   fontSize: '16px',
                   fontWeight: 'semibold',
-                  fontFamily: 'Poppins',
                   textAlign: item.id % 2 === 0 ? 'left' : 'right',
                   // color:
                 }}
@@ -102,9 +101,8 @@ const Single = ({
               <h1
                 className={`fs-md-3 ${item.id % 2 === 0 ? 'ps-3' : 'pe-3'}`}
                 style={{
-                  // fontSize: '34px',
+                  fontSize: '34px',
                   fontWeight: 'semibold',
-                  fontFamily: 'Poppins',
                   textAlign: item.id % 2 === 0 ? 'left' : 'right',
                 }}
               >
@@ -117,8 +115,7 @@ const Single = ({
               style={{
                 color: 'white',
                 backgroundColor: '#111827',
-                // fontSize: '18px',
-                fontFamily: 'Poppins',
+                fontSize: '18px',
                 zIndex: 1,
               }}
             >
@@ -132,7 +129,7 @@ const Single = ({
                 {item.desc}
               </div>
               <div
-                className="position-absolute rounded-2 top-50 start-50 translate-middle w-100 h-100 bg-primary"
+                className=" rounded-2 top-50 start-50 translate-middle w-100 h-100 bg-primary"
                 style={{
                   opacity: 0.5,
                   zIndex: 1,
@@ -151,9 +148,8 @@ const Single = ({
                   className="col col-md-2"
                   style={{
                     color: 'white',
-                    fontFamily: 'Poppins',
                     textAlign: item.id % 2 === 0 ? 'left' : 'right',
-                    // fontSize: '18px',
+                    fontSize: '18px',
                   }}
                 >
                   {tec}
@@ -161,6 +157,7 @@ const Single = ({
               ))}
             </div>
             <div
+              style={{ fontSize: '30px' }}
               className={`row mt-3  ${
                 item.id % 2 === 0
                   ? 'justify-content-start'
@@ -170,7 +167,6 @@ const Single = ({
               <FaGithub
                 className="col-2"
                 style={{
-                  // fontSize: '30px',
                   color: 'white',
                 }}
               />
@@ -178,7 +174,6 @@ const Single = ({
               <IoOpenSharp
                 className="col-2"
                 style={{
-                  // fontSize: '30px',
                   color: 'white',
                 }}
               />
@@ -191,7 +186,7 @@ const Single = ({
 );
 
 const Projects = () => (
-  <div className="portfolio">
+  <div className="portfolio" style={{ fontFamily: 'Preahvihear' }}>
     {items.map((item) => (
       <Single item={item} key={item.id} />
     ))}

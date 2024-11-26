@@ -51,7 +51,7 @@ const AboutMe = () => (
         className="card-title"
         style={{
           fontFamily: 'Preahvihear',
-          fontSize: '69px',
+          fontSize: '64px',
           marginBottom: '50px',
         }}
       >

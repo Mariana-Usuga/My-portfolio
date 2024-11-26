@@ -21,11 +21,16 @@ const Parallax = ({ type }: { type: string }) => {
         marginTop: '100px',
       }}
     >
-      <motion.h1
-        style={{ y: yText, color: 'white', fontFamily: 'Preahvihear' }}
+      <motion.div
+        style={{
+          y: yText,
+          color: 'white',
+          fontFamily: 'Preahvihear',
+          fontSize: '64px',
+        }}
       >
         {type === 'services' ? "Where I've Worked" : "Some Things I've Built"}
-      </motion.h1>
+      </motion.div>
       <motion.div className="mountains" />
       <motion.div
         className="planets"

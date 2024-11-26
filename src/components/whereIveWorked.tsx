@@ -12,6 +12,21 @@ const WhereIveWorked = () => (
           path="/"
           element={(
             <WorkPlace
+              id={4}
+              title="Dms Software"
+              items={[
+                `Collaborated in designing and executing a clothing eCommerce platform, enabling users to search
+                and purchase clothes online using NestJs and MongoDB`,
+                `Established a Domain-Driven Design architecture to maintain distinct layers within the system
+                and enhance code quality.`,
+              ]}
+            />
+          )}
+        />
+        <Route
+          path="/3"
+          element={(
+            <WorkPlace
               id={3}
               title="Sofka"
               items={[
@@ -21,7 +36,7 @@ const WhereIveWorked = () => (
                 and enhance code quality.`,
               ]}
             />
-)}
+          )}
         />
 
         <Route
@@ -37,7 +52,7 @@ const WhereIveWorked = () => (
                 in DynamoDB, manage files in S3, and present results intuitively.`,
               ]}
             />
-)}
+          )}
         />
 
         <Route
@@ -54,11 +69,9 @@ const WhereIveWorked = () => (
                 profiles, facilitating course creation, enrollment, and payment.`,
               ]}
             />
-)}
+          )}
         />
-
       </Route>
-
     </Routes>
   </BrowserRouter>
 );

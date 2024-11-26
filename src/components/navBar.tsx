@@ -16,7 +16,7 @@ const NavBar: FC = () => {
         <button type="button" className="hideBars text-secondary border-0">
           {!isOpen ? (
             <FaAlignRight
-              style={{ fontSize: '35px' }}
+              style={{ fontSize: '30px' }}
               onClick={() => setOpen(true)}
             />
           ) : (
@@ -34,13 +34,18 @@ const NavBar: FC = () => {
                   <a
                     className="nav-link active text-light"
                     href={`#${item}`}
+                    style={{
+                      fontFamily: 'Poppins',
+                      fontWeight: 'SemiBold',
+                      fontSize: '18px',
+                    }}
                     onClick={() => setOpen(false)}
                   >
                     {item}
                   </a>
                 </li>
               ))}
-              <li className="nav-item p-4">
+              <li className="nav-item p-4 fs-4" style={{ fontSize: '18px' }}>
                 <button className="btn btn-outline-secondary " type="button">
                   <a
                     href="file:///C:/Users/Mariana/Downloads/Mariana%20Usuga%20(12).pdf"

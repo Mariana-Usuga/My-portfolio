@@ -38,7 +38,7 @@ const CardProject: FC<Project> = ({
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub style={{ fontSize: '20px' }} />
+            <FaGithub style={{ fontSize: '30px' }} />
           </a>
         </div>
         <div className="col">
@@ -48,17 +48,19 @@ const CardProject: FC<Project> = ({
             target="_blank"
             rel="noreferrer"
           >
-            <FiExternalLink style={{ fontSize: '20px' }} />
+            <FiExternalLink style={{ fontSize: '30px' }} />
           </a>
         </div>
       </div>
-      <h5 className="">{title}</h5>
-      <p className="fs-5">{children}</p>
-      <ul className="d-flex mt-1 mb-0" style={{ listStyleType: 'none' }}>
+      <div className="fw-bold" style={{ fontSize: '24px' }}>
+        {title}
+      </div>
+      <div className="mt-4" style={{ fontSize: '18px' }}>
+        {children}
+      </div>
+      <ul className="d-flex mt-4" style={{ listStyleType: 'none' }}>
         {tecnologies.map((tecnologie) => (
-          <li className="me-3 text-font-family-navbar fw-bold fs-0">
-            {tecnologie}
-          </li>
+          <li className="me-3">{tecnologie}</li>
         ))}
       </ul>
     </div>

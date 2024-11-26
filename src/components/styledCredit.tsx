@@ -1,5 +1,8 @@
 const StyledCredit = () => (
-  <div className="text-success text-center text-font-family-navbar fw-bold fs-0">
+  <div
+    className="text-success text-center fw-bold"
+    style={{ fontFamily: 'Preahvihear', fontSize: '18px' }}
+  >
     <p>Designed and Built by Mariana Usuga</p>
   </div>
 );
