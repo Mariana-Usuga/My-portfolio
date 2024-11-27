@@ -1,22 +1,7 @@
-.progres {
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding-top: 50px;
-  text-align: center;
-  color: white;
-  font-size: 36px;
-}
-.progressBar {
-  height: 10px;
-  background-color: white;
-}
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 70vh;
 }
 img {
   height: 100%;
@@ -33,12 +18,12 @@ img {
   //margin-top: 50px;
 }
 
-.card-b {
+/*.card-b {
   margin-top: 30px;
 }
 .ca {
   margin-top: 50px;
-}
+}*/
 
 @media (min-width: 768px) {
   .card-absolute {

@@ -12,28 +12,13 @@ const WhereIveWorked = () => (
           path="/"
           element={(
             <WorkPlace
-              id={4}
+              id={3}
               title="Dms Software"
               items={[
-                `Collaborated in designing and executing a clothing eCommerce platform, enabling users to search
-                and purchase clothes online using NestJs and MongoDB`,
-                `Established a Domain-Driven Design architecture to maintain distinct layers within the system
-                and enhance code quality.`,
-              ]}
-            />
-          )}
-        />
-        <Route
-          path="/3"
-          element={(
-            <WorkPlace
-              id={3}
-              title="Sofka"
-              items={[
-                `Collaborated in designing and executing a clothing eCommerce platform, enabling users to search
-                and purchase clothes online using NestJs and MongoDB`,
-                `Established a Domain-Driven Design architecture to maintain distinct layers within the system
-                and enhance code quality.`,
+                `Currently working with Flutter to develop an order management application for a warehouse,
+                the application allows the warehouse manager to view their assignments and available products.`,
+                `I have contributed to various projects using Angular, specifically for automotive companies, 
+                delivering scalable and efficient solutions tailored to industry needs.`,
               ]}
             />
           )}

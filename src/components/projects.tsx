@@ -3,41 +3,44 @@
 /* eslint-disable import/no-unresolved */
 import { motion } from 'framer-motion';
 import './projects.scss';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaEye } from 'react-icons/fa';
 import { IoOpenSharp } from 'react-icons/io5';
 
 const items = [
   {
     id: 1,
-    title: 'React Commerce',
-    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
-    desc: `Worked on MarktPul, a web application where anyone can register, browse and search through the second-hand 
-    product offering that were previously uploaded by other sellers . The buyer adds the products to a shopping cart and finally pays and receives home delivery `,
-    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
+    title: 'Picking',
+    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1732721377/market/picking_xi27mp.png',
+    desc: `The application allows the warehouse manager to view their assignments and available products, 
+    improving inventory management and control through barcode scanning. By streamlining the process of registering and updating inventories, 
+    I ensured that the application is intuitive and easy to use, providing an optimized user experience.`,
+    download:
+      'https://drive.google.com/file/d/1SgzaTkNeOAqi-61IhYA5xdw4t4ck7ooK/view?usp=drive_link',
+    tecs: ['Flutter', 'Cubit', 'JWT'],
+    repository: 'http://20.169.252.83/santiago.perez/picking_flutter',
+    eye: 'https://youtu.be/ONxs90EWJFY',
   },
   {
     id: 2,
-    title: 'Next.js Blog',
-    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
-    desc: `Worked on MarktPul, a web application where anyone can register, browse and search through the second-hand product offering that were previously 
-    uploaded by other sellers . The buyer adds the products to a shopping cart and finally pays and receives home delivery`,
-    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
+    title: 'Teslo App',
+    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1732736967/teslo3_tuw92g.png',
+    desc: `A mobile eCommerce app for clothing, built with Flutter, Cubit, and JWT. Designed for administrators,
+     it allows users to browse, create, edit products, register, and log in securely. Streamlines product
+      management with a user-friendly interface and robust authentication.`,
+    download:
+      'https://drive.google.com/file/d/1Cxpw_8axuCya3rGWAKUYt6AbEUCyCNW9/view?usp=drive_link',
+    tecs: ['Flutter', 'Cubit', 'JWT'],
+    repository: 'https://github.com/Mariana-Usuga/teslo-app',
   },
   {
     id: 3,
-    title: 'Vanilla JS App',
+    title: 'MarktPul',
     img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
     desc: `Worked on MarktPul, a web application where anyone can register, browse and search through the second-hand product offering that were previously 
-    uploaded by other sellers . The buyer adds the products to a shopping cart and finally pays and receives home delivery`,
+    uploaded by other sellers . The buyer adds the products to a shopping cart and finally pays and receives home delivery.`,
+    download: 'https://marktpulf.netlify.app/',
     tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
-  },
-  {
-    id: 4,
-    title: 'Music App',
-    img: 'https://res.cloudinary.com/db3njhxi0/image/upload/v1648778391/project1_ljyr81.png',
-    desc: `Worked on MarktPul, a web application where anyone can register, browse and search through the second-hand product offering that were previously 
-    uploaded by other sellers . The buyer adds the products to a shopping cart and finally pays and receives home delivery`,
-    tecs: ['React', 'TailWind', 'NodeJS', 'MongoDB'],
+    repository: 'https://github.com/Mariana-Usuga/MarktPul-F',
   },
 ];
 
@@ -50,6 +53,9 @@ const Single = ({
     img: string;
     desc: string;
     tecs: Array<string>;
+    download: string;
+    repository: string;
+    eye?: string;
   };
 }) => (
   /* const ref = useRef<HTMLDivElement>(null);
@@ -60,10 +66,10 @@ const Single = ({
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]); */
   <section>
-    <div className="container">
+    <div className="container" style={{ marginTop: '120px' }}>
       <div className="row g-2 justify-content-center " style={{}}>
         <div
-          className={`col-md-5 position-relative ${
+          className={`col-md-5 position-relative  ${
             item.id % 2 === 0 ? 'order-md-2 card-right' : 'order-md-1 card-left'
           } `}
         >
@@ -75,7 +81,7 @@ const Single = ({
           }`}
         >
           <div
-            className={`card-body position-relative ${
+            className={` position-relative ${
               item.id % 2 === 0 ? 'card-left' : 'card-right'
             }`}
           >
@@ -129,7 +135,7 @@ const Single = ({
                 {item.desc}
               </div>
               <div
-                className=" rounded-2 top-50 start-50 translate-middle w-100 h-100 bg-primary"
+                className="position-absolute rounded-2 top-50 start-50 translate-middle w-100 h-100 bg-primary"
                 style={{
                   opacity: 0.5,
                   zIndex: 1,
@@ -164,19 +170,47 @@ const Single = ({
                   : 'justify-content-end'
               }`}
             >
-              <FaGithub
+              {item.eye ? (
+                <a
+                  href={item.eye}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="col-2"
+                >
+                  <FaEye
+                    style={{
+                      color: 'white',
+                    }}
+                  />
+                </a>
+              ) : (
+                <div />
+              )}
+              <a
+                href={item.repository}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="col-2"
-                style={{
-                  color: 'white',
-                }}
-              />
+              >
+                <FaGithub
+                  style={{
+                    color: 'white',
+                  }}
+                />
+              </a>
 
-              <IoOpenSharp
+              <a
+                href={item.download}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="col-2"
-                style={{
-                  color: 'white',
-                }}
-              />
+              >
+                <IoOpenSharp
+                  style={{
+                    color: 'white',
+                  }}
+                />
+              </a>
             </div>
           </div>
         </motion.div>

@@ -63,13 +63,14 @@ const AboutMe = () => (
           style={{ fontFamily: 'Preahvihear', fontSize: '18px' }}
         >
           Hi! My name is Mariana, I&apos;m glad you&apos;re here and I would
-          like to tell you a little about myself. By the year 2020 I begin to
-          study Java, HTML, CSS, JavaScript then by the year 2021 I begin a
-          bootcamp, here I learn React, Redux, NodeJS, MongoDB. I learned from
-          this experience to work effectively in teams using the SCRUM
-          methodology, have provided clean and efficient code using GIT to store
-          their code. I am an intelligent person, with great capacity for
-          teamwork and ready to face great challenges.
+          like to tell you a little about myself. Full Stack Developer with over
+          2 years of experience and a strong background in Flutter, Angular,
+          ReactJs, MongoDB, Java, and Node.js. Familiar with RESTful APIs and
+          experienced in developing cross-platform mobile applications with
+          Flutter and process management web applications. Proficient in using
+          Redux, Tailwind CSS, and JWT. What sets me apart is my ability to
+          communicate effectively, solve problems efficiently, and quickly learn
+          new technologies in constantly evolving work environments.
         </p>
       </div>
     </div>

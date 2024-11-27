@@ -15,7 +15,7 @@ interface Job {
 
 const ScrollHorizontal: FC<Job> = ({ id, title }) => (
   <Link
-    to={`/${id !== 4 ? id : ''}`}
+    to={`/${id !== 3 ? id : ''}`}
     key={id}
     style={{ textDecoration: 'none' }}
     data-cy="profile"

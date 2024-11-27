@@ -55,7 +55,7 @@ const Main = () => (
           fontSize: '18px',
         }}
       >
-        React and NodeJS developer building excellent user experiences with the
+        Flutter, React and NodeJS developer building excellent user experiences with the
         MERN stack. I bring well-tested and clean code to the companies and have
         worked effectively with distributed/remote teams.
       </motion.div>

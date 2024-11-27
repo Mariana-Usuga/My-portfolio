@@ -27,14 +27,8 @@ const LayoutWorkPlace = () => {
   // eslint-disable-next-line no-unused-vars
   const [jobChoose, setJobChoose] = useState<Job[]>([
     {
-      id: 4,
-      title: 'Dms Software',
-      from: 'January - 2023',
-      to: 'April - 2023',
-    },
-    {
       id: 3,
-      title: 'Sofka Technologies',
+      title: 'Dms Software',
       from: 'January - 2023',
       to: 'April - 2023',
     },
