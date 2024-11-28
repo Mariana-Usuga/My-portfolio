@@ -55,9 +55,9 @@ const Main = () => (
           fontSize: '18px',
         }}
       >
-        Flutter, React and NodeJS developer building excellent user experiences with the
-        MERN stack. I bring well-tested and clean code to the companies and have
-        worked effectively with distributed/remote teams.
+        Flutter, React and NodeJS developer building excellent user experiences
+        with the MERN stack. I bring well-tested and clean code to the companies
+        and have worked effectively with distributed/remote teams.
       </motion.div>
       <div>
         <motion.button
@@ -72,7 +72,7 @@ const Main = () => (
           }}
         >
           <a
-            href="mailto:marianausugamontoya12344@gmail.com"
+            href="https://www.linkedin.com/in/mariana-usuga/"
             className=" text-success"
             target="_blank"
             rel="noreferrer"

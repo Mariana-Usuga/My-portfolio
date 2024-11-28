@@ -48,10 +48,9 @@ const NavBar: FC = () => {
               <li className="nav-item p-4 fs-4" style={{ fontSize: '18px' }}>
                 <button className="btn btn-outline-secondary " type="button">
                   <a
-                    href="file:///C:/Users/Mariana/Downloads/Mariana%20Usuga%20(12).pdf"
-                    target="_blank"
+                    href="../public/Mariana-Usuga-(12).pdf"
                     className="text-light"
-                    rel="noreferrer"
+                    download
                   >
                     Resume
                   </a>

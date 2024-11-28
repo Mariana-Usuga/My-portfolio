@@ -220,7 +220,7 @@ const Single = ({
 );
 
 const Projects = () => (
-  <div className="portfolio" style={{ fontFamily: 'Preahvihear' }}>
+  <div className="portfolio" id="Work" style={{ fontFamily: 'Preahvihear' }}>
     {items.map((item) => (
       <Single item={item} key={item.id} />
     ))}

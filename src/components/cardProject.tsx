@@ -22,7 +22,7 @@ const CardProject: FC<Project> = ({
   deployment,
   repository,
 }) => (
-  <div className="col-md-4 mb-5">
+  <div className="col-md-4 mb-5" style={{ textAlign: 'justify' }}>
     <div
       className="text-success bg-info p-4 rounded-3 card h-100"
       style={{ height: '340px' }}
@@ -58,9 +58,12 @@ const CardProject: FC<Project> = ({
       <div className="mt-4" style={{ fontSize: '18px' }}>
         {children}
       </div>
-      <ul className="d-flex mt-4" style={{ listStyleType: 'none' }}>
+      <ul
+        className="row justify-content-start mt-4"
+        style={{ listStyleType: 'none' }}
+      >
         {tecnologies.map((tecnologie) => (
-          <li className="me-3">{tecnologie}</li>
+          <li className="col">{tecnologie}</li>
         ))}
       </ul>
     </div>

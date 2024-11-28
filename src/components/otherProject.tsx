@@ -7,6 +7,47 @@
 
 import CardProject from './cardProject';
 
+const items = [
+  {
+    id: 1,
+    title: 'Blog Portal',
+    desc: `A blog CRUD application that allows users to create accounts, log in securely, write and publish blog posts, 
+    view a list of all blogs, and add comments to individual posts. This platform provides a simple yet interactive 
+    way to manage and share content.`,
+    tecs: ['Angular', 'NodeJS', 'MongoDB'],
+    deployment: 'https://capable-bonbon-808f69.netlify.app/',
+    repository: 'https://github.com/Mariana-Usuga/blogPortal-Frontend',
+  },
+  {
+    id: 2,
+    title: 'MoodTracker',
+    desc: `I created a small project with OpenAI where users select their daily mood, 
+    They can add comments and receive a diagnostic based on their mood. The "Trends" section includes a calendar showing moods for each day and a graph of 
+    the user's emotional trends over time. Google authentication is used for login.`,
+    deployment: 'https://benevolent-melomakarona-0966a6.netlify.app/',
+    tecs: ['React', 'Firebase', 'Google Authenticator'],
+    repository:
+      'https://github.com/Mariana-Usuga/sentiment-analyzer-and-mood-tracker',
+  },
+  {
+    id: 3,
+    title: 'System Voting',
+    desc: `Project that's a voting system with four candidates. Users can vote for their preferred candidate and view the results, 
+    either individually or as a total. The results are displayed both numerically and as percentages.`,
+    deployment: 'https://system-voting.netlify.app/',
+    tecs: ['React'],
+    repository: 'https://github.com/Mariana-Usuga/Voting-system',
+  },
+  {
+    id: 4,
+    title: 'Value Manager',
+    desc: 'A small app designed to increment, decrement, reset a value, and add it to a list.',
+    deployment: 'https://candid-kangaroo-6fd276.netlify.app/',
+    tecs: ['Vue'],
+    repository: 'https://github.com/Mariana-Usuga/mi-primer-vue',
+  },
+];
+
 const OtherProject = () => (
   <>
     <div
@@ -17,36 +58,16 @@ const OtherProject = () => (
     </div>
     <div className="container" style={{ fontFamily: 'Preahvihear' }}>
       <div className="row gx-4 gx-lg-5">
-        <CardProject
-          title="Ecommerce_Component"
-          tecnologies={['React', 'Redux', 'Sass']}
-          deployment="https://adoring-easley-2c8944.netlify.app/"
-          repository="https://github.com/Mariana-Usuga/Ecommerce_Component"
-        >
-          This is a shopping cart where the user can add the dishes he wants,
-          when he adds a dish to his cart the total is automatically updated,
-          the user can increase or decrease.
-        </CardProject>
-        <CardProject
-          title="Todo list and Bank with TypeScript"
-          tecnologies={['React', 'Bootstrap', 'Typecript']}
-          deployment="https://first-typescript.netlify.app/"
-          repository="https://github.com/Mariana-Usuga/first-steps-typescript"
-        >
-          This is a todo list where the user can add, delete and update,
-          simulating a bank where the user can deposit, withdraw, withdraw all
-          the money. All this using TypeScript
-        </CardProject>
-        <CardProject
-          title="Voting System"
-          tecnologies={['React', 'Context']}
-          deployment="https://system-voting.netlify.app/"
-          repository="https://github.com/Mariana-Usuga/Voting-system"
-        >
-          This is a voting system in which you can vote for candidate 1, 2, 3 or
-          4. See voting results in percentage or numerical, see the total votes,
-          This interface is made by creating a context.
-        </CardProject>
+        {items.map((item) => (
+          <CardProject
+            title={item.title}
+            tecnologies={item.tecs}
+            deployment={item.deployment}
+            repository={item.repository}
+          >
+            {item.desc}
+          </CardProject>
+        ))}
       </div>
     </div>
   </>

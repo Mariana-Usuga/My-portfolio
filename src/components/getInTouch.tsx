@@ -21,7 +21,7 @@ const GetInTouch = () => (
       <div className="col-12 mt-4">
         <button type="button" className=" btn btn-outline-secondary p-3 m-3">
           <a
-            href="mailto:marianausugamontoya12344@gmail.com"
+            href="mailto:musugamontoya@gmail.com"
             style={{ color: 'white', fontSize: '18px' }}
           >
             Say Hello
