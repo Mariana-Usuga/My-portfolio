@@ -32,7 +32,7 @@ const NavBar: FC = () => {
           )}
         </button>
         <div className={!isOpen ? 'offcanvas offcanvas-end hide' : 'row show'}>
-          <div className="col-8" />
+          <div className="col-5" />
           <div className="col text-font-family-navbar text-center offcanvas-body ">
             <ul
               className="navbar-nav  justify-content-end flex-grow-1 pe-3 text-light fw-semibold "
