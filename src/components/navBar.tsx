@@ -10,9 +10,6 @@ const NavBar: FC = () => {
   return (
     <nav className="navbar navbar-expand-lg pt-4 ps-3">
       <div className="container-fluid">
-        <a className="navbar-brand text-light text-font-family-navbar" href="#">
-          Mariana
-        </a>
         <button
           type="button"
           className="hideBars text-secondary"
