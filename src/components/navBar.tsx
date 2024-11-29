@@ -13,7 +13,14 @@ const NavBar: FC = () => {
         <a className="navbar-brand text-light text-font-family-navbar" href="#">
           Mariana
         </a>
-        <button type="button" className="hideBars text-secondary border-0">
+        <button
+          type="button"
+          className="hideBars text-secondary"
+          style={{
+            backgroundColor: '#1A0B2E',
+            border: 'none',
+          }}
+        >
           {!isOpen ? (
             <FaAlignRight
               style={{ fontSize: '30px' }}
@@ -26,9 +33,13 @@ const NavBar: FC = () => {
             />
           )}
         </button>
-        <div className={!isOpen ? 'offcanvas offcanvas-end hide' : 'show'}>
-          <div className="text-font-family-navbar  text-center offcanvas-body">
-            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 text-light fw-semibold">
+        <div className={!isOpen ? 'offcanvas offcanvas-end hide' : 'row show'}>
+          <div className="col-8" />
+          <div className="col text-font-family-navbar text-center offcanvas-body ">
+            <ul
+              className="navbar-nav  justify-content-end flex-grow-1 pe-3 text-light fw-semibold "
+              style={{ backgroundColor: '#1A0B2E' }}
+            >
               {items.map((item) => (
                 <li className="nav-item p-4">
                   <a

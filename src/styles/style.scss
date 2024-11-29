@@ -100,11 +100,12 @@ $font-sizes: (
   transform: translate(-100%, 0);
 }
 .show {
-  z-index: 10;
+  //z-index: 10;
   transition: transform 0.3s ease;
-  position: absolute;
-  width: 100%;
-  top: 60px;
+  //position: absolute;
+  /*width: 100%;
+  top: 60px;*/
+  text-align: end;
 }
 
 @media (min-width: 992px) {
