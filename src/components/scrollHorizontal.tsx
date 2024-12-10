@@ -19,11 +19,9 @@ const ScrollHorizontal: FC<Job> = ({ id, title }) => (
     key={id}
     style={{ textDecoration: 'none' }}
     data-cy="profile"
+    className="height-auto w-100"
   >
-    <div
-      className="nose text-center scrollh"
-      style={{ fontFamily: 'Preahvihear' }}
-    >
+    <div className="nose text-center" style={{ fontFamily: 'Preahvihear' }}>
       <a
         className="nav-link
         border border-success border-start

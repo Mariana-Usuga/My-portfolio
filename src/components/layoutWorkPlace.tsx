@@ -48,15 +48,13 @@ const LayoutWorkPlace = () => {
 
   return (
     <div
-      className="text-light center-aboutMe boder-primary d-flex align-items-center"
+      className="row text-light center-aboutMe text-light boder-primary mx-auto"
       style={{ maxWidth: '900px', marginTop: '15%', marginBottom: '15%' }}
       id="Experiencie"
     >
-      <div className="items text-success d-md-block col-md-4 row overflow-hidden">
+      <div className="items text-success d-md-block col-md-4 overflow-auto mt-5">
         {jobChoose.map((job) => (
-          <div>
-            <ScrollHorizontal id={job.id} title={job.title} />
-          </div>
+          <ScrollHorizontal id={job.id} title={job.title} />
         ))}
       </div>
       <div className="col-md-8">
