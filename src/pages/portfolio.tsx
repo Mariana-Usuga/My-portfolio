@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
-import NavBar from '../components/navBar';
 import Main from '../components/main';
 import AboutMe from '../components/aboutMe';
 import Parallax from '../components/parallax';
@@ -10,6 +10,7 @@ import Projects from '../components/projects';
 import OtherProject from '../components/otherProject';
 import GetInTouch from '../components/getInTouch';
 import StyledCredit from '../components/styledCredit';
+import NavBar from '../components/navBar';
 // import WorkPlace from '../components/WorkPlace';
 // import Example from '../components/example';
 

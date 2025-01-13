@@ -55,7 +55,15 @@ const CardProject: FC<Project> = ({
       <div className="fw-bold" style={{ fontSize: '24px' }}>
         {title}
       </div>
-      <div className="mt-4" style={{ fontSize: '18px' }}>
+      <div
+        className="mt-4"
+        style={{
+          fontSize: '18px',
+          textAlign: 'justify',
+          textJustify: 'inter-word',
+          wordSpacing: '-0.1em',
+        }}
+      >
         {children}
       </div>
       <ul
